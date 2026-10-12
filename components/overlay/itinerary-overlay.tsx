@@ -1,53 +1,48 @@
 'use client'
 
-import { useState } from 'react'
-import { ListOrdered } from 'lucide-react'
-import { cn } from '@/lib/utils'
-import { useTripClock } from '@/hooks/use-trip-clock'
-import { ItinerarySidebar } from './itinerary-sidebar'
-import { NowNextCard } from './now-next-card'
-
-export type ActiveOverlay = 'itinerary' | 'card' | null
+import { useEffect } from 'react'
+import { getActiveScheduleItem, itineraryItems } from '@/lib/itinerary-data'
+import { LandmarkBackground } from '@/components/LandmarkBackground'
+import { ItineraryCard } from '@/components/ItineraryCard'
+import { useItineraryStore } from '@/store/useItineraryStore'
+import { ItineraryModal } from './itinerary-modal'
 
 export function ItineraryOverlay() {
-  const now = useTripClock()
-  const [activeOverlay, setActiveOverlay] = useState<ActiveOverlay>('card')
+  const setLocalTime = useItineraryStore((state) => state.setLocalTime)
+  const setActiveScheduleItem = useItineraryStore((state) => state.setActiveScheduleItem)
 
-  const toggle = (target: Exclude<ActiveOverlay, null>) =>
-    setActiveOverlay((current) => (current === target ? null : target))
+  useEffect(() => {
+    const updateTime = () => setLocalTime(Date.now())
+    updateTime()
+    const timer = window.setInterval(updateTime, 60_000)
+    return () => window.clearInterval(timer)
+  }, [setLocalTime])
 
-  const itineraryOpen = activeOverlay === 'itinerary'
+  useEffect(() => {
+    const current = getActiveScheduleItem(new Date())
+    if (!current) return
+    setActiveScheduleItem(current)
+    window.requestAnimationFrame(() => {
+      document.querySelector<HTMLElement>(`[data-itinerary-id="${current.id}"]`)?.scrollIntoView({ block: 'center' })
+    })
+  }, [setActiveScheduleItem]) // Set the time-aware default once; scrolling takes control after mount.
+
+  const localTime = useItineraryStore((state) => state.localTime)
 
   return (
-    <div className="pointer-events-none absolute inset-0 flex">
-      <ItinerarySidebar
-        now={now}
-        open={itineraryOpen}
-        onClose={() => setActiveOverlay(null)}
-      />
-
-      <button
-        type="button"
-        onClick={() => toggle('itinerary')}
-        aria-controls="itinerary-sidebar"
-        aria-expanded={itineraryOpen}
-        tabIndex={itineraryOpen ? -1 : 0}
-        className={cn(
-          'fixed top-4 left-4 z-30 flex items-center gap-2 rounded-full border border-white/10 bg-slate-950/50 px-4 py-2 text-sm font-medium text-white shadow-lg backdrop-blur-xl transition-all duration-300 ease-out md:hidden',
-          itineraryOpen
-            ? 'pointer-events-none -translate-y-2 opacity-0'
-            : 'pointer-events-auto translate-y-0 opacity-100',
-        )}
-      >
-        <ListOrdered className="size-4" aria-hidden="true" />
-        Itinerary
-      </button>
-
-      <NowNextCard
-        now={now}
-        expanded={activeOverlay === 'card'}
-        onToggle={() => toggle('card')}
-      />
+    <div className="relative h-full w-full">
+      <LandmarkBackground />
+      <main aria-label="Trip itinerary" className="relative z-10 h-full overflow-y-auto scroll-smooth px-4 py-[12vh] sm:px-8">
+        <div className="mx-auto flex max-w-3xl flex-col items-center gap-4">
+          <header className="mb-8 text-center text-white drop-shadow-lg">
+            <p className="text-xs uppercase tracking-[0.25em] text-white/65">14–27 October 2026</p>
+            <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-5xl">London & Brighton itinerary</h1>
+            <p className="mt-2 text-sm text-white/60">{itineraryItems.length} scheduled moments · Local time {new Date(localTime).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</p>
+          </header>
+          {itineraryItems.map((item, index) => <ItineraryCard key={item.id} item={item} index={index} />)}
+        </div>
+      </main>
+      <ItineraryModal />
     </div>
   )
 }
