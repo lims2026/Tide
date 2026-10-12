@@ -10,7 +10,7 @@ export type ItineraryItem = {
   startTime: string
   activity: string
   landmarkId: string
-  nearestStudySpotId: string | null
+  nearestStudySpotId?: string
   restaurantId?: string
 }
 
@@ -39,21 +39,33 @@ export const itineraryItems = itineraryJson.items as ItineraryItem[]
 export const studySpots = studySpotsJson as StudySpot[]
 export const restaurants = restaurantsJson.restaurants as Restaurant[]
 
-export const getStudySpot = (id: string | null) => studySpots.find((spot) => spot.id === id)
+export const getStudySpot = (id?: string | null) => studySpots.find((spot) => spot.id === id)
 export const getRestaurant = (id?: string) => restaurants.find((restaurant) => restaurant.id === id)
 
-const localDateKey = (date: Date) => {
-  const year = date.getFullYear()
-  const month = String(date.getMonth() + 1).padStart(2, '0')
-  const day = String(date.getDate()).padStart(2, '0')
-  return `${year}-${month}-${day}`
+const UK_TIME_ZONE = 'Europe/London'
+const ukDateTimeFormatter = new Intl.DateTimeFormat('en-GB', {
+  timeZone: UK_TIME_ZONE,
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+  hour: '2-digit',
+  minute: '2-digit',
+  hourCycle: 'h23',
+})
+
+export function getUKDateTime(date: Date) {
+  const parts = Object.fromEntries(ukDateTimeFormatter.formatToParts(date).map(({ type, value }) => [type, value]))
+  return {
+    date: `${parts.year}-${parts.month}-${parts.day}`,
+    minutes: Number(parts.hour) * 60 + Number(parts.minute),
+    clock: new Intl.DateTimeFormat('en-GB', { timeZone: UK_TIME_ZONE, hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(date),
+  }
 }
 
 /** Select the latest scheduled activity at or before local time, or the next upcoming one. */
 export function getActiveScheduleItem(date: Date): ItineraryItem | undefined {
-  const today = localDateKey(date)
+  const { date: today, minutes: minutesNow } = getUKDateTime(date)
   const todaysItems = itineraryItems.filter((item) => item.date === today)
-  const minutesNow = date.getHours() * 60 + date.getMinutes()
   if (todaysItems.length) {
     return todaysItems.filter((item) => {
       const [hours, minutes] = item.startTime.split(':').map(Number)
@@ -62,3 +74,10 @@ export function getActiveScheduleItem(date: Date): ItineraryItem | undefined {
   }
   return itineraryItems.find((item) => item.date > today) ?? itineraryItems.at(-1)
 }
+
+export const itineraryDays = itineraryItems.reduce<{ date: string; title: string; items: ItineraryItem[] }[]>((days, item) => {
+  const currentDay = days.at(-1)
+  if (currentDay?.date === item.date) currentDay.items.push(item)
+  else days.push({ date: item.date, title: item.dayTitle, items: [item] })
+  return days
+}, [])
