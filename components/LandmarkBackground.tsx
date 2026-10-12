@@ -5,10 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useItineraryStore } from '@/store/useItineraryStore'
 
 /**
- * Maps each itinerary landmark ID to the matching background artwork file.
- *
- * The IDs come from the itinerary data, so the field journal can stay in sync with
- * the chapter being viewed while still allowing a manual tile override.
+ * Maps clean itinerary landmark IDs to the matching background artwork file.
  */
 const LANDMARK_IMAGES: Record<string, string> = {
   bigben: '/images/landmarks/bigben.webp',
@@ -23,6 +20,7 @@ const LANDMARK_IMAGES: Record<string, string> = {
   pavilion: '/images/landmarks/brightonpavilion.webp',
   apartment: '/images/landmarks/apartment.webp',
   airport: '/images/landmarks/airport.webp',
+  departureairport: '/images/landmarks/airport.webp',
   britishrestaurantpub: '/images/landmarks/britishrestaurantpub.webp',
   cafe: '/images/landmarks/cafe.webp',
   clubbing: '/images/landmarks/clubbing.webp',
@@ -39,16 +37,12 @@ const LANDMARK_IMAGES: Record<string, string> = {
   seaside: '/images/landmarks/brightonpier.webp',
 }
 
-/**
- * LandmarkBackground renders the mixed-media scene behind the itinerary.
- *
- * The app has two visual modes: auto tracking the current activity or a short
- * manual spotlight while a card is tapped. This component always reads the
- * current background landmark from the store so the scene can switch smoothly.
- */
 export function LandmarkBackground() {
-  const backgroundLandmarkId = useItineraryStore((state) => state.backgroundLandmarkId)
-  const imageSrc = LANDMARK_IMAGES[backgroundLandmarkId] ?? LANDMARK_IMAGES.bigben
+  const backgroundLandmarkId = useItineraryStore((state) => state.backgroundLandmarkId) || 'bigben'
+
+  // Clean up the ID by removing any accidental '.webp' or file extensions sent from JSON
+  const cleanId = backgroundLandmarkId.replace(/\.[^/.]+$/, '').toLowerCase()
+  const imageSrc = LANDMARK_IMAGES[cleanId] ?? LANDMARK_IMAGES.bigben
 
   return (
     <div aria-hidden="true" className="pointer-events-none fixed inset-0 z-0 flex items-center justify-center overflow-hidden">

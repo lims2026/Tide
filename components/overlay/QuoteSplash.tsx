@@ -6,13 +6,13 @@ import quotesJson from '@/data/quotes.json'
 import { useItineraryStore } from '@/store/useItineraryStore'
 
 const QUOTES = quotesJson as Array<{ id: number; poem: string }>
+const WELCOME_SEEN_KEY = 'larrys_guide_welcome_seen'
 
 /**
- * QuoteSplash shows the pink welcome overlay for the trip.
+ * QuoteSplash renders a multi-step pink splash intro:
  *
- * On every load we read the next verse index from localStorage so the user sees a
- * fresh love poem in sequence. Clicking either option keeps the experience warm and
- * playful while surfacing the cute reaction modal.
+ * - First Visit: Card 1 (Welcome & Choice) -> Card 2 ("Me too baby <3!") -> Card 3 (Poem of the Day)
+ * - Subsequent Loads: Skips Cards 1 & 2 directly to Card 3 (Poem of the Day) with auto-incrementing verse index.
  */
 export function QuoteSplash() {
   const showSplash = useItineraryStore((state) => state.showSplash)
@@ -20,96 +20,165 @@ export function QuoteSplash() {
   const setPoemIndex = useItineraryStore((state) => state.setPoemIndex)
   const setShowSplash = useItineraryStore((state) => state.setShowSplash)
   const setExcitementChoice = useItineraryStore((state) => state.setExcitementChoice)
-  const [reactionVisible, setReactionVisible] = useState(false)
+
+  // Step 1: Welcome | Step 2: "Me too baby" | Step 3: Poem of the day
+  const [step, setStep] = useState<1 | 2 | 3>(3)
+  const [selectedChoice, setSelectedChoice] = useState<'see-me' | 'super' | null>(null)
 
   const poem = useMemo(() => QUOTES[poemIndex % QUOTES.length], [poemIndex])
 
+  /** Determine initial card step based on first-time visit history */
   useEffect(() => {
-    if (!showSplash) {
-      setReactionVisible(false)
+    if (typeof window !== 'undefined') {
+      const hasSeenWelcome = localStorage.getItem(WELCOME_SEEN_KEY)
+      if (!hasSeenWelcome) {
+        setStep(1)
+      } else {
+        setStep(3)
+      }
     }
   }, [showSplash])
 
-  const advancePoem = () => {
-    setPoemIndex((poemIndex + 1) % QUOTES.length)
-  }
-
-  const handleChoice = (choice: 'see-me' | 'super') => {
+  /** Card 1 -> Card 2 */
+  const handleSelectChoice = (choice: 'see-me' | 'super') => {
+    setSelectedChoice(choice)
     setExcitementChoice(choice)
-    setShowSplash(false)
-    advancePoem()
-    setReactionVisible(true)
+    setStep(2)
   }
 
-  if (!showSplash && !reactionVisible) {
+  /** Card 2 -> Card 3 (Marks welcome cards as seen forever) */
+  const handleProceedToPoem = () => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem(WELCOME_SEEN_KEY, 'true')
+    }
+    setStep(3)
+  }
+
+  /** Card 3 -> Close Splash & Advance Poetry Counter for Next Load */
+  const handleFinishSplash = () => {
+    setPoemIndex((poemIndex + 1) % QUOTES.length)
+    setShowSplash(false)
+  }
+
+  if (!showSplash) {
     return null
   }
 
   return (
-    <>
-      <AnimatePresence>
-        {showSplash && (
+    <AnimatePresence mode="wait">
+      <motion.div
+        key="splash-overlay"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="fixed inset-0 z-50 flex items-center justify-center bg-[#f9dfe8]/85 p-4 backdrop-blur-md"
+      >
+        {/* CARD 1: FIRST VISIT WELCOME & CHOICE */}
+        {step === 1 && (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-[#f9dfe8]/80 p-4 backdrop-blur-sm"
+            key="card-1"
+            initial={{ scale: 0.95, y: 20, opacity: 0 }}
+            animate={{ scale: 1, y: 0, opacity: 1 }}
+            exit={{ scale: 0.95, y: -20, opacity: 0 }}
+            transition={{ duration: 0.25, ease: 'easeOut' }}
+            className="w-full max-w-xl rounded-[2rem] border border-pink-200 bg-gradient-to-br from-[#fff7fb] via-[#fff0f6] to-[#ffe4ef] p-6 shadow-[0_30px_80px_rgba(163,63,112,0.23)] sm:p-8"
           >
-            <motion.div
-              initial={{ scale: 0.96, y: 20 }}
-              animate={{ scale: 1, y: 0 }}
-              exit={{ scale: 0.98, y: 10 }}
-              className="w-full max-w-xl rounded-[2rem] border border-pink-200 bg-gradient-to-br from-[#fff7fb] via-[#fff0f6] to-[#ffe4ef] p-6 shadow-[0_30px_80px_rgba(163,63,112,0.23)]"
-            >
-              <div className="flex items-center justify-between gap-3 text-[0.62rem] font-semibold uppercase tracking-[0.24em] text-pink-700">
-                <span>Love note</span>
-                <span>Verse {poemIndex + 1} / {QUOTES.length}</span>
-              </div>
+            <div className="text-[0.62rem] font-semibold uppercase tracking-[0.24em] text-pink-700">
+              Special Delivery
+            </div>
 
-              <p className="mt-6 text-2xl leading-relaxed text-pink-950 sm:text-3xl">{poem.poem}</p>
+            <h1 className="mt-4 font-display text-2xl font-bold leading-snug text-pink-950 sm:text-3xl">
+              Welcome to London baby, I&apos;m so excited to see you!
+            </h1>
 
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <button
-                  type="button"
-                  onClick={() => handleChoice('see-me')}
-                  className="flex-1 rounded-full border border-pink-300 bg-white/80 px-4 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-pink-800 transition hover:bg-pink-50"
-                >
-                  I&apos;m so excited
-                </button>
-                <button
-                  type="button"
-                  onClick={() => handleChoice('super')}
-                  className="flex-1 rounded-full bg-pink-600 px-4 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white shadow-[0_10px_22px_rgba(219,102,149,0.26)] transition hover:bg-pink-500"
-                >
-                  This is adorable
-                </button>
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      <AnimatePresence>
-        {reactionVisible && (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.95 }}
-            className="fixed inset-0 z-[60] flex items-center justify-center bg-[#2b1121]/30 p-4"
-          >
-            <div className="rounded-[2rem] border border-pink-200 bg-white px-8 py-6 text-center shadow-[0_20px_60px_rgba(57,19,40,0.26)]">
-              <p className="font-display text-3xl tracking-[0.08em] text-pink-900">Me too baby &lt;3!</p>
+            <div className="mt-6 flex flex-col gap-3">
               <button
                 type="button"
-                onClick={() => setReactionVisible(false)}
-                className="mt-5 rounded-full bg-pink-600 px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white"
+                onClick={() => handleSelectChoice('see-me')}
+                className={`group flex items-center justify-between rounded-2xl border p-4 text-left transition-all ${
+                  selectedChoice === 'see-me'
+                    ? 'border-pink-500 bg-pink-100/80 shadow-md'
+                    : 'border-pink-200 bg-white/80 hover:border-pink-400 hover:bg-pink-50'
+                }`}
               >
-                Keep wandering
+                <span className="text-sm font-medium text-pink-900">
+                  Click here if you&apos;re excited to see me too
+                </span>
+                <span className="size-4 rounded-full border-2 border-pink-400 group-hover:border-pink-600" />
+              </button>
+
+              <button
+                type="button"
+                onClick={() => handleSelectChoice('super')}
+                className={`group flex items-center justify-between rounded-2xl border p-4 text-left transition-all ${
+                  selectedChoice === 'super'
+                    ? 'border-pink-500 bg-pink-100/80 shadow-md'
+                    : 'border-pink-200 bg-white/80 hover:border-pink-400 hover:bg-pink-50'
+                }`}
+              >
+                <span className="text-sm font-medium text-pink-900">
+                  Click here if you&apos;re super excited to see me
+                </span>
+                <span className="size-4 rounded-full border-2 border-pink-400 group-hover:border-pink-600" />
               </button>
             </div>
           </motion.div>
         )}
-      </AnimatePresence>
-    </>
+
+        {/* CARD 2: FIRST VISIT REACTION MODAL */}
+        {step === 2 && (
+          <motion.div
+            key="card-2"
+            initial={{ scale: 0.92, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.95, opacity: 0 }}
+            transition={{ duration: 0.25, ease: 'easeOut' }}
+            className="w-full max-w-sm rounded-[2rem] border border-pink-200 bg-white px-8 py-8 text-center shadow-[0_20px_60px_rgba(57,19,40,0.26)]"
+          >
+            <p className="font-display text-3xl font-bold tracking-[0.05em] text-pink-900">
+              Me too baby &lt;3!
+            </p>
+            <button
+              type="button"
+              onClick={handleProceedToPoem}
+              className="mt-6 w-full rounded-full bg-pink-600 px-5 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-pink-500"
+            >
+              See today&apos;s love note &rarr;
+            </button>
+          </motion.div>
+        )}
+
+        {/* CARD 3: POEM OF THE DAY (DISPLAYED ON EVERY RELOAD) */}
+        {step === 3 && (
+          <motion.div
+            key="card-3"
+            initial={{ scale: 0.95, y: 20, opacity: 0 }}
+            animate={{ scale: 1, y: 0, opacity: 1 }}
+            exit={{ scale: 0.98, y: 10, opacity: 0 }}
+            transition={{ duration: 0.25, ease: 'easeOut' }}
+            className="w-full max-w-xl rounded-[2rem] border border-pink-200 bg-gradient-to-br from-[#fff7fb] via-[#fff0f6] to-[#ffe4ef] p-6 shadow-[0_30px_80px_rgba(163,63,112,0.23)] sm:p-8"
+          >
+            <div className="flex items-center justify-between gap-3 text-[0.62rem] font-semibold uppercase tracking-[0.24em] text-pink-700">
+              <span>Daily Love Note</span>
+              <span>Verse {poemIndex + 1} / {QUOTES.length}</span>
+            </div>
+
+            <p className="mt-6 text-xl leading-relaxed text-pink-950 sm:text-2xl">
+              {poem.poem}
+            </p>
+
+            <div className="mt-8 flex justify-end">
+              <button
+                type="button"
+                onClick={handleFinishSplash}
+                className="w-full rounded-full bg-pink-600 px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-white shadow-[0_10px_22px_rgba(219,102,149,0.26)] transition hover:bg-pink-500 sm:w-auto"
+              >
+                Open Tour Guide &rarr;
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </motion.div>
+    </AnimatePresence>
   )
 }
