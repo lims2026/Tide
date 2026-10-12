@@ -1,0 +1,110 @@
+[
+  {
+    "id": "foyles",
+    "name": "The Café at Foyles",
+    "distance": "0.4 km",
+    "address": "107 Charing Cross Road, London WC2H 0DT",
+    "amenities": [
+      "Wi-Fi",
+      "Laptop friendly",
+      "Bookshop"
+    ],
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Caf%C3%A9%20at%20Foyles%20107%20Charing%20Cross%20Road%2C%20London%20WC2H%200DT"
+  },
+  {
+    "id": "bfi-southbank",
+    "name": "BFI Southbank",
+    "distance": "0.7 km",
+    "address": "Belvedere Road, London SE1 8XT",
+    "amenities": [
+      "Wi-Fi",
+      "Cafe",
+      "River views"
+    ],
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=BFI%20Southbank%20Belvedere%20Road%2C%20London%20SE1%208XT"
+  },
+  {
+    "id": "british-museum",
+    "name": "The British Museum",
+    "distance": "0.2 km",
+    "address": "Great Russell Street, London WC1B 3DG",
+    "amenities": [
+      "Cafe",
+      "Indoor seating",
+      "Wi-Fi"
+    ],
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20British%20Museum%20Great%20Russell%20Street%2C%20London%20WC1B%203DG"
+  },
+  {
+    "id": "jubilee-library",
+    "name": "Jubilee Library",
+    "distance": "0.3 km",
+    "address": "Jubilee Street, Brighton BN1 1GE",
+    "amenities": [
+      "Wi-Fi",
+      "Power outlets",
+      "Quiet study areas"
+    ],
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jubilee%20Library%20Jubilee%20Street%2C%20Brighton%20BN1%201GE"
+  },
+  {
+    "id": "trading-post",
+    "name": "Trading Post Coffee Roasters (Ship St)",
+    "distance": "0.5 km",
+    "address": "Ship Street, Brighton BN1 1AD",
+    "amenities": [
+      "Coffee",
+      "Wi-Fi",
+      "Laptop friendly"
+    ],
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Trading%20Post%20Coffee%20Roasters%20%28Ship%20St%29%20Ship%20Street%2C%20Brighton%20BN1%201AD"
+  },
+  {
+    "id": "ikigai",
+    "name": "Ikigai Coffee",
+    "distance": "0.2 km",
+    "address": "Brighton city centre",
+    "amenities": [
+      "Coffee",
+      "Wi-Fi",
+      "Quiet seating"
+    ],
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ikigai%20Coffee%20Brighton%20city%20centre"
+  },
+  {
+    "id": "komodo",
+    "name": "Komodo Speciality Coffee",
+    "distance": "0.4 km",
+    "address": "Brighton city centre",
+    "amenities": [
+      "Coffee",
+      "Wi-Fi",
+      "Pastries"
+    ],
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Komodo%20Speciality%20Coffee%20Brighton%20city%20centre"
+  },
+  {
+    "id": "espresso-bakery",
+    "name": "The Espresso Bakery, Uxbridge",
+    "distance": "0.3 km",
+    "address": "Uxbridge High Street, Uxbridge",
+    "amenities": [
+      "Bakery",
+      "Coffee",
+      "Laptop friendly"
+    ],
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Espresso%20Bakery%2C%20Uxbridge%20Uxbridge%20High%20Street%2C%20Uxbridge"
+  },
+  {
+    "id": "barinas-apartment",
+    "name": "Barina's Apartment, Cowley/Uxbridge",
+    "distance": "On site",
+    "address": "Cowley, Uxbridge",
+    "amenities": [
+      "Wi-Fi",
+      "Quiet workspace",
+      "Canal view"
+    ],
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Barina%27s%20Apartment%2C%20Cowley/Uxbridge%20Cowley%2C%20Uxbridge"
+  }
+]

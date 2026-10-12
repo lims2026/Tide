@@ -1,0 +1,304 @@
+{
+  "restaurants": [
+    {
+      "name": "The Salt Room",
+      "meal": "lunch",
+      "day": "Thu 15 Oct",
+      "note": "Octoberbest lunch",
+      "id": "restaurant-1",
+      "menuUrl": "https://www.google.com/search?q=The%20Salt%20Room%20Thu%2015%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Salt%20Room",
+      "address": "Brighton seafront, Brighton BN1"
+    },
+    {
+      "name": "The Grand Brighton",
+      "meal": "dinner",
+      "day": "Thu 15 Oct",
+      "note": "Cyan, in-hotel restaurant",
+      "id": "restaurant-2",
+      "menuUrl": "https://www.google.com/search?q=The%20Grand%20Brighton%20Thu%2015%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Grand%20Brighton",
+      "address": "The Grand Brighton, 97-99 Kings Road, Brighton BN1 2FW"
+    },
+    {
+      "name": "Salt Shed",
+      "meal": "dinner",
+      "day": "Fri 16 Oct",
+      "note": "3-meat platter",
+      "id": "restaurant-3",
+      "menuUrl": "https://www.google.com/search?q=Salt%20Shed%20Fri%2016%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Salt%20Shed",
+      "address": "Brighton"
+    },
+    {
+      "name": "Garden Cafe Brighton",
+      "meal": "brunch",
+      "day": "Fri 16 Oct",
+      "note": "",
+      "id": "restaurant-4",
+      "menuUrl": "https://www.google.com/search?q=Garden%20Cafe%20Brighton%20Fri%2016%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Garden%20Cafe%20Brighton",
+      "address": "Brighton city centre"
+    },
+    {
+      "name": "Rybka Fish and Chips",
+      "meal": "brunch",
+      "day": "Sat 17 Oct",
+      "note": "Fish and chips",
+      "id": "restaurant-5",
+      "menuUrl": "https://www.google.com/search?q=Rybka%20Fish%20and%20Chips%20Sat%2017%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Rybka%20Fish%20and%20Chips",
+      "address": "Brighton seafront"
+    },
+    {
+      "name": "That Little Tea Shop",
+      "meal": "afternoon tea",
+      "day": "Sat 17 Oct",
+      "note": "",
+      "id": "restaurant-6",
+      "menuUrl": "https://www.google.com/search?q=That%20Little%20Tea%20Shop%20Sat%2017%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=That%20Little%20Tea%20Shop",
+      "address": "Brighton city centre"
+    },
+    {
+      "name": "The Malt Shovel",
+      "meal": "brunch",
+      "day": "Sun 18 Oct",
+      "note": "With Amir and Barina",
+      "id": "restaurant-7",
+      "menuUrl": "https://www.google.com/search?q=The%20Malt%20Shovel%20Sun%2018%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Malt%20Shovel",
+      "address": "Uxbridge"
+    },
+    {
+      "name": "The Espresso Bakery, Uxbridge",
+      "meal": "afternoon tea",
+      "day": "Mon 19 Oct",
+      "note": "",
+      "id": "restaurant-8",
+      "menuUrl": "https://www.google.com/search?q=The%20Espresso%20Bakery%2C%20Uxbridge%20Mon%2019%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Espresso%20Bakery%2C%20Uxbridge",
+      "address": "Uxbridge High Street"
+    },
+    {
+      "name": "Bao Soho",
+      "meal": "lunch",
+      "day": "Tue 20 Oct",
+      "note": "Meet at 12:00 sharp",
+      "id": "restaurant-9",
+      "menuUrl": "https://www.google.com/search?q=Bao%20Soho%20Tue%2020%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bao%20Soho",
+      "address": "Soho, London"
+    },
+    {
+      "name": "Italian Bear Chocolate",
+      "meal": "coffee",
+      "day": "Tue 20 Oct",
+      "note": "Melting chocolate over cups",
+      "id": "restaurant-10",
+      "menuUrl": "https://www.google.com/search?q=Italian%20Bear%20Chocolate%20Tue%2020%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Italian%20Bear%20Chocolate",
+      "address": "Soho, London"
+    },
+    {
+      "name": "Dishoom Carnaby",
+      "meal": "dinner",
+      "day": "Tue 20 Oct",
+      "note": "With the HK girls (or Kiln)",
+      "id": "restaurant-11",
+      "menuUrl": "https://www.google.com/search?q=Dishoom%20Carnaby%20Tue%2020%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Dishoom%20Carnaby",
+      "address": "Carnaby, London"
+    },
+    {
+      "name": "Holborn Dining Room",
+      "meal": "lunch",
+      "day": "Wed 21 Oct",
+      "note": "The Pie Room; 12:00 sharp",
+      "id": "restaurant-12",
+      "menuUrl": "https://www.google.com/search?q=Holborn%20Dining%20Room%20Wed%2021%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Holborn%20Dining%20Room",
+      "address": "Holborn, London"
+    },
+    {
+      "name": "Yeye Noodle and Dumpling",
+      "meal": "dinner",
+      "day": "Wed 21 Oct",
+      "note": "Option B",
+      "id": "restaurant-13",
+      "menuUrl": "https://www.google.com/search?q=Yeye%20Noodle%20and%20Dumpling%20Wed%2021%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Yeye%20Noodle%20and%20Dumpling",
+      "address": "Soho, London"
+    },
+    {
+      "name": "Chin Chin Labs",
+      "meal": "dessert",
+      "day": "Wed 21 Oct",
+      "note": "Option B",
+      "id": "restaurant-14",
+      "menuUrl": "https://www.google.com/search?q=Chin%20Chin%20Labs%20Wed%2021%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chin%20Chin%20Labs",
+      "address": "Camden, London"
+    },
+    {
+      "name": "Berwick Street Market",
+      "meal": "lunch",
+      "day": "Thu 22 Oct",
+      "note": "Street food stalls",
+      "id": "restaurant-15",
+      "menuUrl": "https://www.google.com/search?q=Berwick%20Street%20Market%20Thu%2022%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Berwick%20Street%20Market",
+      "address": "Soho, London"
+    },
+    {
+      "name": "Flat Iron, Mayfair area",
+      "meal": "dinner",
+      "day": "Thu 22 Oct",
+      "note": "Or similar",
+      "id": "restaurant-16",
+      "menuUrl": "https://www.google.com/search?q=Flat%20Iron%2C%20Mayfair%20area%20Thu%2022%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Flat%20Iron%2C%20Mayfair%20area",
+      "address": "Mayfair, London"
+    },
+    {
+      "name": "The WatersEdge",
+      "meal": "afternoon tea",
+      "day": "Fri 23 Oct",
+      "note": "Canal-side pub",
+      "id": "restaurant-17",
+      "menuUrl": "https://www.google.com/search?q=The%20WatersEdge%20Fri%2023%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20WatersEdge",
+      "address": "Uxbridge Canal"
+    },
+    {
+      "name": "Harrods",
+      "meal": "lunch",
+      "day": "Sat 24 Oct",
+      "note": "Near Knightsbridge",
+      "id": "restaurant-18",
+      "menuUrl": "https://www.google.com/search?q=Harrods%20Sat%2024%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Harrods",
+      "address": "Knightsbridge, London"
+    },
+    {
+      "name": "Gelupo",
+      "meal": "dessert",
+      "day": "Sat 24 Oct",
+      "note": "",
+      "id": "restaurant-19",
+      "menuUrl": "https://www.google.com/search?q=Gelupo%20Sat%2024%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gelupo",
+      "address": "Soho, London"
+    },
+    {
+      "name": "The Blues Kitchen Shoreditch",
+      "meal": "lunch",
+      "day": "Sun 25 Oct",
+      "note": "",
+      "id": "restaurant-20",
+      "menuUrl": "https://www.google.com/search?q=The%20Blues%20Kitchen%20Shoreditch%20Sun%2025%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Blues%20Kitchen%20Shoreditch",
+      "address": "Shoreditch, London"
+    },
+    {
+      "name": "The WatersEdge",
+      "meal": "lunch",
+      "day": "Tue 27 Oct",
+      "note": "Final lunch",
+      "id": "restaurant-21",
+      "menuUrl": "https://www.google.com/search?q=The%20WatersEdge%20Tue%2027%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20WatersEdge",
+      "address": "Uxbridge Canal"
+    },
+    {
+      "name": "Ikigai Coffee",
+      "meal": "coffee",
+      "day": "Fri 16 Oct",
+      "note": "",
+      "id": "restaurant-22",
+      "menuUrl": "https://www.google.com/search?q=Ikigai%20Coffee%20Fri%2016%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ikigai%20Coffee",
+      "address": "Brighton city centre"
+    },
+    {
+      "name": "Komodo Speciality Coffee",
+      "meal": "coffee",
+      "day": "Sat 17 Oct",
+      "note": "",
+      "id": "restaurant-23",
+      "menuUrl": "https://www.google.com/search?q=Komodo%20Speciality%20Coffee%20Sat%2017%20Oct%20menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Komodo%20Speciality%20Coffee",
+      "address": "Brighton city centre"
+    },
+    {
+      "id": "restaurant-extra-queens",
+      "name": "The Queen’s Arms",
+      "meal": "restaurant",
+      "day": "",
+      "note": "",
+      "address": "7 George St, Brighton BN2 1RJ",
+      "menuUrl": "https://www.google.com/search?q=The+Queen%27s+Arms+Brighton+menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Queen%E2%80%99s%20Arms%207%20George%20St%2C%20Brighton%20BN2%201RJ"
+    },
+    {
+      "id": "restaurant-extra-charles",
+      "name": "Charles Street Tap",
+      "meal": "restaurant",
+      "day": "",
+      "note": "",
+      "address": "Kemptown, Brighton",
+      "menuUrl": "https://www.google.com/search?q=Charles+Street+Tap+Brighton+menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Charles%20Street%20Tap%20Kemptown%2C%20Brighton"
+    },
+    {
+      "id": "restaurant-extra-marine",
+      "name": "The Marine Tavern",
+      "meal": "restaurant",
+      "day": "",
+      "note": "",
+      "address": "Kemptown, Brighton",
+      "menuUrl": "https://www.google.com/search?q=The+Marine+Tavern+Brighton+menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Marine%20Tavern%20Kemptown%2C%20Brighton"
+    },
+    {
+      "id": "restaurant-extra-legends",
+      "name": "Legends Hotel & Bar",
+      "meal": "restaurant",
+      "day": "",
+      "note": "",
+      "address": "31-34 Marine Parade, Brighton BN2 1TR",
+      "menuUrl": "https://www.google.com/search?q=Legends+Hotel+Brighton+menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Legends%20Hotel%20%26%20Bar%2031-34%20Marine%20Parade%2C%20Brighton%20BN2%201TR"
+    },
+    {
+      "id": "restaurant-extra-victoria",
+      "name": "The Victoria Bar",
+      "meal": "restaurant",
+      "day": "",
+      "note": "",
+      "address": "The Grand Brighton, 97-99 Kings Road, Brighton BN1 2FW",
+      "menuUrl": "https://www.google.com/search?q=The+Victoria+Bar+Grand+Brighton+menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Victoria%20Bar%20The%20Grand%20Brighton%2C%2097-99%20Kings%20Road%2C%20Brighton%20BN1%202FW"
+    },
+    {
+      "id": "restaurant-extra-cyan",
+      "name": "Cyan",
+      "meal": "restaurant",
+      "day": "",
+      "note": "",
+      "address": "The Grand Brighton, Brighton",
+      "menuUrl": "https://www.google.com/search?q=Cyan+restaurant+Grand+Brighton+menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cyan%20The%20Grand%20Brighton%2C%20Brighton"
+    },
+    {
+      "id": "restaurant-extra-kiln",
+      "name": "Kiln",
+      "meal": "restaurant",
+      "day": "",
+      "note": "",
+      "address": "Soho, London",
+      "menuUrl": "https://www.google.com/search?q=Kiln+Soho+menu",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kiln%20Soho%2C%20London"
+    }
+  ]
+}
