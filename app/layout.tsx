@@ -1,10 +1,10 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Fredoka, Quicksand } from 'next/font/google'
 import './globals.css'
 
-const geistSans = Geist({ subsets: ['latin'], variable: '--font-geist-sans' })
-const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-geist-mono' })
+const fredoka = Fredoka({ subsets: ['latin'], variable: '--font-display' })
+const quicksand = Quicksand({ subsets: ['latin'], variable: '--font-sans' })
 
 export const metadata: Metadata = {
   title: "Larry's Tour Guide",
@@ -41,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} bg-[#0b0f1a]`}>
+    <html lang="en" className={`${fredoka.variable} ${quicksand.variable} bg-[#f9f1df]`}>
       <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
