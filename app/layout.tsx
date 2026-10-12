@@ -7,9 +7,9 @@ const geistSans = Geist({ subsets: ['latin'], variable: '--font-geist-sans' })
 const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-geist-mono' })
 
 export const metadata: Metadata = {
-  title: 'Itinerary For Larrys London Trip.',
+  title: "Larry's Tour Guide",
   description:
-    'A live itinerary timeline and current / up-next event card.',
+    'A live fantasy itinerary timeline and current activity tracker.',
   generator: 'v0.app',
   icons: {
     icon: [

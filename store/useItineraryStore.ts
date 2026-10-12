@@ -24,7 +24,7 @@ type ItineraryState = {
 export const useItineraryStore = create<ItineraryState>((set) => ({
   activeLandmarkId: 'bigben',
   activeScheduleItemId: null,
-  localTime: 0,
+  localTime: Date.now(),
   activeModal: { type: 'none', data: null },
   setActiveScheduleItem: (activeScheduleItemId) => set({ activeScheduleItemId }),
   setActiveLandmarkId: (activeLandmarkId) => set({ activeLandmarkId }),
