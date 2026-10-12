@@ -265,7 +265,7 @@
       "restaurantId": "restaurant-23"
     },
     {
-      "id": "2026-10-17-1130-25",
+      "id": "2026-10-17-1130-24",
       "date": "2026-10-17",
       "dayTitle": "Final Day in Brighton",
       "time": "11:30 AM",
@@ -733,118 +733,6 @@
       "landmarkId": "movieatapartment.webp"
     },
     {
-      "id": "2026-10-24-0800-70",
-      "date": "2026-10-24",
-      "dayTitle": "Double Date and a Gay Evening",
-      "time": "8:00 AM",
-      "startTime": "08:00",
-      "title": "Group Breakfast",
-      "activity": "Enjoying breakfast with Amir and Barina before a big day out.",
-      "landmarkId": "cookingatapartment.webp"
-    },
-    {
-      "id": "2026-10-24-1000-71",
-      "date": "2026-10-24",
-      "dayTitle": "Double Date and a Gay Evening",
-      "time": "10:00 AM",
-      "startTime": "10:00",
-      "title": "Notting Hill & Portobello",
-      "activity": "Wandering through colorful pastel streets and vibrant market stalls.",
-      "landmarkId": "clothshopping.webp"
-    },
-    {
-      "id": "2026-10-24-1200-72",
-      "date": "2026-10-24",
-      "dayTitle": "Double Date and a Gay Evening",
-      "time": "12:00 PM",
-      "startTime": "12:00",
-      "title": "Bookstore Browsing",
-      "activity": "Stopping by iconic bookshops like Daunt Books in Kensington.",
-      "landmarkId": "clothshopping.webp"
-    },
-    {
-      "id": "2026-10-24-1300-73",
-      "date": "2026-10-24",
-      "dayTitle": "Double Date and a Gay Evening",
-      "time": "1:00 PM",
-      "startTime": "13:00",
-      "title": "Luxury Window Shopping",
-      "activity": "Admiring the stunning window displays at Harrods in Knightsbridge.",
-      "landmarkId": "clothshopping.webp",
-      "restaurantId": "restaurant-18"
-    },
-    {
-      "id": "2026-10-24-1330-74",
-      "date": "2026-10-24",
-      "dayTitle": "Double Date and a Gay Evening",
-      "time": "1:30 PM",
-      "startTime": "13:30",
-      "title": "Knightsbridge Lunch",
-      "activity": "Grabbing a wonderful bite to eat near the heart of Knightsbridge.",
-      "landmarkId": "britishrestaurantpub.webp"
-    },
-    {
-      "id": "2026-10-24-1430-75",
-      "date": "2026-10-24",
-      "dayTitle": "Double Date and a Gay Evening",
-      "time": "2:30 PM",
-      "startTime": "14:30",
-      "title": "Cycling to Buckingham Palace",
-      "activity": "Taking a scenic bike ride down to the royal residence.",
-      "landmarkId": "bigben.webp"
-    },
-    {
-      "id": "2026-10-24-1600-76",
-      "date": "2026-10-24",
-      "dayTitle": "Double Date and a Gay Evening",
-      "time": "4:00 PM",
-      "startTime": "16:00",
-      "title": "Regent Street Stroll",
-      "activity": "Window shopping along bustling Regent Street.",
-      "landmarkId": "clothshopping.webp"
-    },
-    {
-      "id": "2026-10-24-1830-77",
-      "date": "2026-10-24",
-      "dayTitle": "Double Date and a Gay Evening",
-      "time": "6:30 PM",
-      "startTime": "18:30",
-      "title": "Barbican Conservatory Views",
-      "activity": "Discovering the incredible indoor tropical oasis and highwalks.",
-      "landmarkId": "bigben.webp"
-    },
-    {
-      "id": "2026-10-24-1930-78",
-      "date": "2026-10-24",
-      "dayTitle": "Double Date and a Gay Evening",
-      "time": "7:30 PM",
-      "startTime": "19:30",
-      "title": "St. Paul's at Dusk",
-      "activity": "Admiring the magnificent cathedral lit up against the evening sky.",
-      "landmarkId": "bigben.webp"
-    },
-    {
-      "id": "2026-10-24-2030-79",
-      "date": "2026-10-24",
-      "dayTitle": "Double Date and a Gay Evening",
-      "time": "8:30 PM",
-      "startTime": "20:30",
-      "title": "Soho Dinner",
-      "activity": "Enjoying a fantastic dinner right in the center of Soho.",
-      "landmarkId": "frenchrestaurant.webp"
-    },
-    {
-      "id": "2026-10-24-2200-80",
-      "date": "2026-10-24",
-      "dayTitle": "Double Date and a Gay Evening",
-      "time": "10:00 PM",
-      "startTime": "22:00",
-      "title": "Gelato Treat",
-      "activity": "Stopping by Gelupo for some of the best artisan gelato in town.",
-      "landmarkId": "cafe.webp",
-      "restaurantId": "restaurant-19"
-    },
-    {
       "id": "2026-10-24-2300-81",
       "date": "2026-10-24",
       "dayTitle": "Double Date and a Gay Evening",
@@ -855,9 +743,9 @@
       "landmarkId": "clubbing.webp"
     },
     {
-      "id": "2026-10-25-1000-82",
-      "date": "2026-10-25",
-      "dayTitle": "Bhabs & Larry Day",
+      "id": "2026-10-24-1000-82",
+      "date": "2026-10-24",
+      "dayTitle": "Double Date and a Gay Evening",
       "time": "10:00 AM",
       "startTime": "10:00",
       "title": "Morning Breakfast",
@@ -865,9 +753,9 @@
       "landmarkId": "cookingatapartment.webp"
     },
     {
-      "id": "2026-10-25-1130-83",
-      "date": "2026-10-25",
-      "dayTitle": "Bhabs & Larry Day",
+      "id": "2026-10-24-1130-83",
+      "date": "2026-10-24",
+      "dayTitle": "Double Date and a Gay Evening",
       "time": "11:30 AM",
       "startTime": "11:30",
       "title": "Camden Market Adventure",
@@ -875,9 +763,9 @@
       "landmarkId": "clothshopping.webp"
     },
     {
-      "id": "2026-10-25-1330-84",
-      "date": "2026-10-25",
-      "dayTitle": "Bhabs & Larry Day",
+      "id": "2026-10-24-1330-84",
+      "date": "2026-10-24",
+      "dayTitle": "Double Date and a Gay Evening",
       "time": "1:30 PM",
       "startTime": "13:30",
       "title": "Brick Lane Exploration",
@@ -885,9 +773,9 @@
       "landmarkId": "clothshopping.webp"
     },
     {
-      "id": "2026-10-25-1430-85",
-      "date": "2026-10-25",
-      "dayTitle": "Bhabs & Larry Day",
+      "id": "2026-10-24-1430-85",
+      "date": "2026-10-24",
+      "dayTitle": "Double Date and a Gay Evening",
       "time": "2:30 PM",
       "startTime": "14:30",
       "title": "Blues Kitchen Lunch",
@@ -895,9 +783,9 @@
       "landmarkId": "steakrestaurant.webp"
     },
     {
-      "id": "2026-10-25-1600-86",
-      "date": "2026-10-25",
-      "dayTitle": "Bhabs & Larry Day",
+      "id": "2026-10-24-1600-86",
+      "date": "2026-10-24",
+      "dayTitle": "Double Date and a Gay Evening",
       "time": "4:00 PM",
       "startTime": "16:00",
       "title": "Spitalfields Market",
@@ -905,9 +793,9 @@
       "landmarkId": "clothshopping.webp"
     },
     {
-      "id": "2026-10-25-1730-87",
-      "date": "2026-10-25",
-      "dayTitle": "Bhabs & Larry Day",
+      "id": "2026-10-24-1730-87",
+      "date": "2026-10-24",
+      "dayTitle": "Double Date and a Gay Evening",
       "time": "5:30 PM",
       "startTime": "17:30",
       "title": "Sky Garden Drinks",
@@ -915,9 +803,9 @@
       "landmarkId": "bigben.webp"
     },
     {
-      "id": "2026-10-25-1830-88",
-      "date": "2026-10-25",
-      "dayTitle": "Bhabs & Larry Day",
+      "id": "2026-10-24-1830-88",
+      "date": "2026-10-24",
+      "dayTitle": "Double Date and a Gay Evening",
       "time": "6:30 PM",
       "startTime": "18:30",
       "title": "Tower Bridge Walk",
@@ -925,14 +813,126 @@
       "landmarkId": "bigben.webp"
     },
     {
-      "id": "2026-10-25-1900-89",
-      "date": "2026-10-25",
-      "dayTitle": "Bhabs & Larry Day",
+      "id": "2026-10-24-1900-89",
+      "date": "2026-10-24",
+      "dayTitle": "Double Date and a Gay Evening",
       "time": "7:00 PM",
       "startTime": "19:00",
       "title": "Dinner Back Home",
       "activity": "Returning to the apartment for a warm, cozy group dinner.",
       "landmarkId": "movieatapartment.webp"
+    },
+    {
+      "id": "2026-10-25-0800-70",
+      "date": "2026-10-25",
+      "dayTitle": "Bhabs & Larry Day",
+      "time": "8:00 AM",
+      "startTime": "08:00",
+      "title": "Group Breakfast",
+      "activity": "Enjoying breakfast with Amir and Barina before a big day out.",
+      "landmarkId": "cookingatapartment.webp"
+    },
+    {
+      "id": "2026-10-25-1000-71",
+      "date": "2026-10-25",
+      "dayTitle": "Bhabs & Larry Day",
+      "time": "10:00 AM",
+      "startTime": "10:00",
+      "title": "Notting Hill & Portobello",
+      "activity": "Wandering through colorful pastel streets and vibrant market stalls.",
+      "landmarkId": "clothshopping.webp"
+    },
+    {
+      "id": "2026-10-25-1200-72",
+      "date": "2026-10-25",
+      "dayTitle": "Bhabs & Larry Day",
+      "time": "12:00 PM",
+      "startTime": "12:00",
+      "title": "Bookstore Browsing",
+      "activity": "Stopping by iconic bookshops like Daunt Books in Kensington.",
+      "landmarkId": "clothshopping.webp"
+    },
+    {
+      "id": "2026-10-25-1300-73",
+      "date": "2026-10-25",
+      "dayTitle": "Bhabs & Larry Day",
+      "time": "1:00 PM",
+      "startTime": "13:00",
+      "title": "Luxury Window Shopping",
+      "activity": "Admiring the stunning window displays at Harrods in Knightsbridge.",
+      "landmarkId": "clothshopping.webp",
+      "restaurantId": "restaurant-18"
+    },
+    {
+      "id": "2026-10-25-1330-74",
+      "date": "2026-10-25",
+      "dayTitle": "Bhabs & Larry Day",
+      "time": "1:30 PM",
+      "startTime": "13:30",
+      "title": "Knightsbridge Lunch",
+      "activity": "Grabbing a wonderful bite to eat near the heart of Knightsbridge.",
+      "landmarkId": "britishrestaurantpub.webp"
+    },
+    {
+      "id": "2026-10-25-1430-75",
+      "date": "2026-10-25",
+      "dayTitle": "Bhabs & Larry Day",
+      "time": "2:30 PM",
+      "startTime": "14:30",
+      "title": "Cycling to Buckingham Palace",
+      "activity": "Taking a scenic bike ride down to the royal residence.",
+      "landmarkId": "bigben.webp"
+    },
+    {
+      "id": "2026-10-25-1600-76",
+      "date": "2026-10-25",
+      "dayTitle": "Bhabs & Larry Day",
+      "time": "4:00 PM",
+      "startTime": "16:00",
+      "title": "Regent Street Stroll",
+      "activity": "Window shopping along bustling Regent Street.",
+      "landmarkId": "clothshopping.webp"
+    },
+    {
+      "id": "2026-10-25-1830-77",
+      "date": "2026-10-25",
+      "dayTitle": "Bhabs & Larry Day",
+      "time": "6:30 PM",
+      "startTime": "18:30",
+      "title": "Barbican Conservatory Views",
+      "activity": "Discovering the incredible indoor tropical oasis and highwalks.",
+      "landmarkId": "bigben.webp"
+    },
+    {
+      "id": "2026-10-25-1930-78",
+      "date": "2026-10-25",
+      "dayTitle": "Bhabs & Larry Day",
+      "time": "7:30 PM",
+      "startTime": "19:30",
+      "title": "St. Paul's at Dusk",
+      "activity": "Admiring the magnificent cathedral lit up against the evening sky.",
+      "landmarkId": "bigben.webp"
+    },
+    {
+      "id": "2026-10-25-2030-79",
+      "date": "2026-10-25",
+      "dayTitle": "Bhabs & Larry Day",
+      "time": "8:30 PM",
+      "startTime": "20:30",
+      "title": "Soho Dinner",
+      "activity": "Enjoying a fantastic dinner right in the center of Soho.",
+      "landmarkId": "frenchrestaurant.webp"
+    },
+    {
+      "id": "2026-10-25-2200-80",
+      "date": "2026-10-25",
+      "dayTitle": "Bhabs & Larry Day",
+      "time": "10:00 PM",
+      "startTime": "22:00",
+      "title": "Gelato Treat",
+      "activity": "Stopping by Gelupo for some of the best artisan gelato in town.",
+      "landmarkId": "cafe.webp",
+      "restaurantId": "restaurant-19"
     },
     {
       "id": "2026-10-26-0600-90",

@@ -160,7 +160,7 @@ export function ItineraryCard({ item, index }: { item: ItineraryItem; index: num
             className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-1.5 text-[0.64rem] font-semibold uppercase tracking-[0.14em] text-indigo-900 transition hover:bg-indigo-100"
           >
             <BookOpen className="size-3.5" aria-hidden="true" />
-            Info
+            Study
           </button>
         )}
 
@@ -171,7 +171,7 @@ export function ItineraryCard({ item, index }: { item: ItineraryItem; index: num
             className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1.5 text-[0.64rem] font-semibold uppercase tracking-[0.14em] text-emerald-800 transition hover:bg-emerald-100"
           >
             <BookOpen className="size-3.5" aria-hidden="true" />
-            Info
+            Restaurant
           </button>
         )}
       </div>

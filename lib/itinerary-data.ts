@@ -2,6 +2,9 @@ import itineraryJson from '@/data/itinerary.json'
 import studySpotsJson from '@/data/study_spots.json'
 import restaurantsJson from '@/data/restaurants.json'
 
+export const TRIP_START_DATE = '2026-10-14'
+export const TRIP_END_DATE = '2026-10-27'
+
 /**
  * A single scheduled stop in the trip itinerary.
  *
@@ -48,7 +51,23 @@ export type Restaurant = {
   gps_xyz?: { x: number; y: number; z: number; unit: string }
 }
 
-export const itineraryItems = itineraryJson.items as ItineraryItem[]
+/**
+ * Sorts itinerary items by UTC date and then by start time.
+ *
+ * This keeps the schedule consistent even if the source JSON is unordered or a
+ * future export is not already chronological. The function preserves the original
+ * hyperlink values by never modifying restaurant URLs.
+ */
+export function sortItineraryItems(items: ItineraryItem[]) {
+  return [...items].sort((left, right) => {
+    const dateComparison = left.date.localeCompare(right.date)
+    if (dateComparison !== 0) return dateComparison
+
+    return (left.startTime || '00:00').localeCompare(right.startTime || '00:00')
+  })
+}
+
+export const itineraryItems = sortItineraryItems(itineraryJson.items as ItineraryItem[])
 export const studySpots = studySpotsJson as StudySpot[]
 export const restaurants = restaurantsJson.restaurants as Restaurant[]
 
@@ -141,16 +160,16 @@ export function getItemWebsiteUrl(item: Pick<ItineraryItem, 'id' | 'title' | 'ac
 /**
  * Selects the latest scheduled activity at or before the current UK time, or the next upcoming one.
  */
-export function getActiveScheduleItem(date: Date): ItineraryItem | undefined {
+export function getActiveScheduleItem(date: Date, items: ItineraryItem[] = itineraryItems): ItineraryItem | undefined {
   const { date: today, minutes: minutesNow } = getUKDateTime(date)
-  const todaysItems = itineraryItems.filter((item) => item.date === today)
+  const todaysItems = items.filter((item) => item.date === today)
 
   if (todaysItems.length) {
     const active = todaysItems.filter((item) => parseScheduleMinutes(item.startTime) <= minutesNow).at(-1)
     return active ?? todaysItems[0]
   }
 
-  return itineraryItems.find((item) => item.date > today) ?? itineraryItems.at(-1)
+  return items.find((item) => item.date > today) ?? items.at(-1)
 }
 
 /**
