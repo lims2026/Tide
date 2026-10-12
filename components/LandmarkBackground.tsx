@@ -5,11 +5,10 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useItineraryStore } from '@/store/useItineraryStore'
 
 /**
- * Maps each itinerary landmark ID to its artwork file.
+ * Maps each itinerary landmark ID to the matching background artwork file.
  *
- * These IDs are intentionally stored in the itinerary data so the visual scene
- * always matches the story beat for the active card. We keep the mapping here so
- * the background can be swapped without altering the itinerary schema.
+ * The IDs come from the itinerary data, so the field journal can stay in sync with
+ * the chapter being viewed while still allowing a manual tile override.
  */
 const LANDMARK_IMAGES: Record<string, string> = {
   bigben: '/images/landmarks/bigben.webp',
@@ -41,15 +40,15 @@ const LANDMARK_IMAGES: Record<string, string> = {
 }
 
 /**
- * LandmarkBackground renders the live scene behind the itinerary.
+ * LandmarkBackground renders the mixed-media scene behind the itinerary.
  *
- * It subscribes to the active landmark ID from Zustand, then cross-fades to the
- * matching artwork using Framer Motion. This creates a polished transition as the
- * user scrolls through the trip and the current quest changes.
+ * The app has two visual modes: auto tracking the current activity or a short
+ * manual spotlight while a card is tapped. This component always reads the
+ * current background landmark from the store so the scene can switch smoothly.
  */
 export function LandmarkBackground() {
-  const activeLandmarkId = useItineraryStore((state) => state.activeLandmarkId)
-  const imageSrc = LANDMARK_IMAGES[activeLandmarkId] ?? LANDMARK_IMAGES.bigben
+  const backgroundLandmarkId = useItineraryStore((state) => state.backgroundLandmarkId)
+  const imageSrc = LANDMARK_IMAGES[backgroundLandmarkId] ?? LANDMARK_IMAGES.bigben
 
   return (
     <div aria-hidden="true" className="pointer-events-none fixed inset-0 z-0 flex items-center justify-center overflow-hidden">
@@ -60,7 +59,7 @@ export function LandmarkBackground() {
           animate={{ opacity: 0.9, scale: 1 }}
           exit={{ opacity: 0, scale: 1.02 }}
           transition={{ duration: 0.42, ease: 'easeInOut' }}
-          className="relative h-[80vh] w-[88vw] max-w-[900px] drop-shadow-[0_30px_55px_rgba(60,38,15,0.16)]"
+          className="relative h-[80vh] w-[88vw] max-w-[900px] drop-shadow-[0_30px_55px_rgba(62,42,18,0.18)]"
         >
           <Image
             src={imageSrc}
@@ -68,7 +67,7 @@ export function LandmarkBackground() {
             fill
             priority
             sizes="(max-width: 768px) 100vw, 700px"
-            className="object-contain"
+            className="object-contain opacity-90"
           />
         </motion.div>
       </AnimatePresence>

@@ -4,35 +4,45 @@ import { create } from 'zustand'
 import type { Restaurant, StudySpot } from '@/lib/itinerary-data'
 
 /**
- * Modal state union for the itinerary detail popovers.
+ * Modal state for the itinerary info popovers.
  *
- * The app supports two lightweight modal views: a study-spot card and a
- * restaurant menu panel. Keeping the union explicit makes the UI logic easy to
- * extend without awkward null checks.
+ * The app opens either a study-spot overview or a restaurant detail card. The
+ * union keeps the modal logic explicit and easy to extend.
  */
 export type ActiveModal =
   | { type: 'study'; data: StudySpot }
   | { type: 'restaurant'; data: Restaurant }
   | { type: 'none'; data: null }
 
+export type BackgroundMode = 'current' | 'manual'
+
 /**
- * Global state for the itinerary overlay.
+ * Global state for the tourist passport journal UI.
  *
- * activeLandmarkId controls the background image behind the itinerary, while
- * activeScheduleItemId highlights the current quest card in the list. localTime
- * stores the latest live clock value used by the top bar and schedule matcher.
+ * activeLandmarkId and backgroundLandmarkId determine the artwork shown behind the
+ * trip timeline. currentLandmarkId tracks the true live activity while the app can
+ * temporarily switch into a manual override when a user taps a tile.
  */
 type ItineraryState = {
-  /** The current landmark artwork visible behind the trip list. */
-  activeLandmarkId: string
-  /** The currently active itinerary item ID matching the live schedule. */
+  /** The currently highlighted itinerary item matching the live schedule. */
   activeScheduleItemId: string | null
-  /** Latest client time used for the live time display and schedule checks. */
+  /** The current live activity landmark that the time tracker resolves. */
+  currentLandmarkId: string
+  /** The background artwork currently being displayed. */
+  backgroundLandmarkId: string
+  /** The immediate visual landmark value used by the card list and background. */
+  activeLandmarkId: string
+  /** Whether the scene is tracking the live schedule or manually pinned to a tile. */
+  backgroundMode: BackgroundMode
+  /** Latest timestamp used for the live clock readout and schedule matching. */
   localTime: number
   /** The currently open detail modal, or null when no modal is visible. */
   activeModal: ActiveModal
   setActiveScheduleItem: (itemId: string) => void
   setActiveLandmarkId: (landmarkId: string) => void
+  setCurrentActivityLandmarkId: (landmarkId: string) => void
+  setManualBackground: (landmarkId: string) => void
+  resetBackgroundToCurrent: () => void
   setLocalTime: (time: number) => void
   openStudyModal: (spot: StudySpot) => void
   openRestaurantModal: (restaurant: Restaurant) => void
@@ -40,12 +50,33 @@ type ItineraryState = {
 }
 
 export const useItineraryStore = create<ItineraryState>((set) => ({
-  activeLandmarkId: 'bigben',
   activeScheduleItemId: null,
+  currentLandmarkId: 'bigben',
+  backgroundLandmarkId: 'bigben',
+  activeLandmarkId: 'bigben',
+  backgroundMode: 'current',
   localTime: Date.now(),
   activeModal: { type: 'none', data: null },
   setActiveScheduleItem: (activeScheduleItemId) => set({ activeScheduleItemId }),
-  setActiveLandmarkId: (activeLandmarkId) => set({ activeLandmarkId }),
+  setActiveLandmarkId: (activeLandmarkId) => set({ activeLandmarkId, backgroundLandmarkId: activeLandmarkId }),
+  setCurrentActivityLandmarkId: (landmarkId) =>
+    set((state) => ({
+      currentLandmarkId: landmarkId,
+      activeLandmarkId: state.backgroundMode === 'current' ? landmarkId : state.activeLandmarkId,
+      backgroundLandmarkId: state.backgroundMode === 'current' ? landmarkId : state.backgroundLandmarkId,
+    })),
+  setManualBackground: (landmarkId) =>
+    set({
+      activeLandmarkId: landmarkId,
+      backgroundLandmarkId: landmarkId,
+      backgroundMode: 'manual',
+    }),
+  resetBackgroundToCurrent: () =>
+    set((state) => ({
+      backgroundMode: 'current',
+      activeLandmarkId: state.currentLandmarkId,
+      backgroundLandmarkId: state.currentLandmarkId,
+    })),
   setLocalTime: (localTime) => set({ localTime }),
   openStudyModal: (data) => set({ activeModal: { type: 'study', data } }),
   openRestaurantModal: (data) => set({ activeModal: { type: 'restaurant', data } }),

@@ -2,6 +2,12 @@ import itineraryJson from '@/data/itinerary.json'
 import studySpotsJson from '@/data/study_spots.json'
 import restaurantsJson from '@/data/restaurants.json'
 
+/**
+ * A single scheduled stop in the trip itinerary.
+ *
+ * Each item contains the date, title, times, and the landmark image it should map
+ * to when the user is browsing the journal or tracking the live schedule.
+ */
 export type ItineraryItem = {
   id: string
   date: string
@@ -15,6 +21,9 @@ export type ItineraryItem = {
   restaurantId?: string
 }
 
+/**
+ * Detail data for a nearby study space and its quick-travel links.
+ */
 export type StudySpot = {
   id: string
   name: string
@@ -24,6 +33,9 @@ export type StudySpot = {
   mapsUrl: string
 }
 
+/**
+ * Detail data for a restaurant or food stop on the trip.
+ */
 export type Restaurant = {
   id: string
   name: string
@@ -40,7 +52,14 @@ export const itineraryItems = itineraryJson.items as ItineraryItem[]
 export const studySpots = studySpotsJson as StudySpot[]
 export const restaurants = restaurantsJson.restaurants as Restaurant[]
 
+/**
+ * Finds the study-spot record matching the item reference in the itinerary.
+ */
 export const getStudySpot = (id?: string | null) => studySpots.find((spot) => spot.id === id)
+
+/**
+ * Finds the restaurant record matching the item reference in the itinerary.
+ */
 export const getRestaurant = (id?: string) => restaurants.find((restaurant) => restaurant.id === id)
 
 const UK_TIME_ZONE = 'Europe/London'
@@ -54,6 +73,9 @@ const ukDateTimeFormatter = new Intl.DateTimeFormat('en-GB', {
   hourCycle: 'h23',
 })
 
+/**
+ * Converts a Date object to the UK-local fields used by the trip logic.
+ */
 export function getUKDateTime(date: Date) {
   const parts = Object.fromEntries(ukDateTimeFormatter.formatToParts(date).map(({ type, value }) => [type, value]))
   return {
@@ -63,20 +85,32 @@ export function getUKDateTime(date: Date) {
   }
 }
 
+/**
+ * Returns the title or first line of the activity text when a card needs a label.
+ */
 export function getItemDisplayTitle(item: Pick<ItineraryItem, 'title' | 'activity'>) {
   return item.title || item.activity.split('\n')[0] || 'Untitled activity'
 }
 
+/**
+ * Returns the longer blurb shown in the expanded card details.
+ */
 export function getItemSummary(item: Pick<ItineraryItem, 'title' | 'activity'>) {
   const base = item.activity || ''
   return base.includes('\n') ? base.slice(base.indexOf('\n') + 1).trim() : base.trim()
 }
 
+/**
+ * Converts a schedule string like HH:MM into minutes since midnight.
+ */
 function parseScheduleMinutes(startTime: string) {
   const [hours, minutes] = startTime.split(':').map(Number)
   return (Number.isFinite(hours) ? hours : 0) * 60 + (Number.isFinite(minutes) ? minutes : 0)
 }
 
+/**
+ * Builds the correct map link for each itinerary item with fallbacks for study and restaurant data.
+ */
 export function getItemLocationUrl(item: Pick<ItineraryItem, 'id' | 'title' | 'activity'>, studySpot?: StudySpot | null, restaurant?: Restaurant | null) {
   const title = `${item.title} ${item.activity}`.toLowerCase()
 
@@ -93,6 +127,9 @@ export function getItemLocationUrl(item: Pick<ItineraryItem, 'id' | 'title' | 'a
   return null
 }
 
+/**
+ * Returns the external website link for places that need a direct resource or menu.
+ */
 export function getItemWebsiteUrl(item: Pick<ItineraryItem, 'id' | 'title' | 'activity'>, studySpot?: StudySpot | null, restaurant?: Restaurant | null) {
   const title = `${item.title} ${item.activity}`.toLowerCase()
   if (title.includes('m&c') || title.includes('saatchi') || title.includes('golden square') || title.includes('heathrow') || title.includes('lhr')) {
@@ -101,7 +138,9 @@ export function getItemWebsiteUrl(item: Pick<ItineraryItem, 'id' | 'title' | 'ac
   return restaurant?.menuUrl || studySpot?.mapsUrl || null
 }
 
-/** Select the latest scheduled activity at or before current UK time, or the next upcoming one. */
+/**
+ * Selects the latest scheduled activity at or before the current UK time, or the next upcoming one.
+ */
 export function getActiveScheduleItem(date: Date): ItineraryItem | undefined {
   const { date: today, minutes: minutesNow } = getUKDateTime(date)
   const todaysItems = itineraryItems.filter((item) => item.date === today)
@@ -114,6 +153,9 @@ export function getActiveScheduleItem(date: Date): ItineraryItem | undefined {
   return itineraryItems.find((item) => item.date > today) ?? itineraryItems.at(-1)
 }
 
+/**
+ * Groups itinerary items by date so the journal can render a passport-style day marker.
+ */
 export const itineraryDays = itineraryItems.reduce<{ date: string; title: string; items: ItineraryItem[] }[]>((days, item) => {
   const currentDay = days.at(-1)
   if (currentDay?.date === item.date) currentDay.items.push(item)
