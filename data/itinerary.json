@@ -7,8 +7,9 @@
       "dayTitle": "First Day in London",
       "time": "11:00 AM",
       "startTime": "11:00",
-      "activity": "I land at London Heathrow Airport (LHR).",
-      "landmarkId": "bigben"
+      "title": "Touched Down in London!",
+      "activity": "Landing at Heathrow Airport and starting the amazing adventure.",
+      "landmarkId": "airport"
     },
     {
       "id": "2026-10-14-1300-01",
@@ -16,8 +17,9 @@
       "dayTitle": "First Day in London",
       "time": "1:00 PM",
       "startTime": "13:00",
-      "activity": "We arrive at Barina's apartment (Waterside, Cowley/Uxbridge area) to drop my bags and let me freshen up.",
-      "landmarkId": "apartment"
+      "title": "Dropping Bags & Freshening Up",
+      "activity": "Arriving at Barina's apartment to drop off bags and get settled in.",
+      "landmarkId": "apartment.webp"
     },
     {
       "id": "2026-10-14-1500-02",
@@ -25,8 +27,9 @@
       "dayTitle": "First Day in London",
       "time": "3:00 PM",
       "startTime": "15:00",
-      "activity": "We head to the dance class with Marika in South Kensington (Approximate travel time from Uxbridge to South Kensington via Piccadilly line: 50-60 mins).",
-      "landmarkId": "apartment"
+      "title": "Dance Class with Marika",
+      "activity": "Heading over to South Kensington for an energetic afternoon dance session.",
+      "landmarkId": "bigben.webp"
     },
     {
       "id": "2026-10-14-1700-03",
@@ -34,8 +37,9 @@
       "dayTitle": "First Day in London",
       "time": "5:00 PM – Onward",
       "startTime": "17:00",
-      "activity": "We head back to Barina's apartment for a relaxed evening of dinner and movies together.",
-      "landmarkId": "apartment"
+      "title": "Cozy Movie & Dinner Night",
+      "activity": "Returning to the apartment for a relaxing evening of dinner and movies together.",
+      "landmarkId": "movieatapartment.webp"
     },
     {
       "id": "2026-10-15-0800-04",
@@ -43,8 +47,9 @@
       "dayTitle": "Happy Birthday, Larry!",
       "time": "8:00 AM",
       "startTime": "08:00",
-      "activity": "We wake up and have breakfast at Barina's apartment.",
-      "landmarkId": "apartment"
+      "title": "Birthday Breakfast",
+      "activity": "Waking up to a cozy birthday breakfast at the apartment.",
+      "landmarkId": "cookingatapartment.webp"
     },
     {
       "id": "2026-10-15-0900-05",
@@ -52,8 +57,9 @@
       "dayTitle": "Happy Birthday, Larry!",
       "time": "9:00 AM",
       "startTime": "09:00",
-      "activity": "We head to the train station to catch a train to Brighton (Train from London Victoria or London Bridge takes roughly 1 hour).",
-      "landmarkId": "brightonpier"
+      "title": "Brighton Bound Train",
+      "activity": "Catching the morning train down to the scenic seaside city of Brighton.",
+      "landmarkId": "brightonpier.webp"
     },
     {
       "id": "2026-10-15-1100-06",
@@ -61,8 +67,9 @@
       "dayTitle": "Happy Birthday, Larry!",
       "time": "11:00 AM – 12:00 PM",
       "startTime": "11:00",
-      "activity": "We arrive in Brighton, explore slowly, and head to The Grand Brighton (97-99 King's Rd, Brighton BN1 2FW) to drop off our bags.",
-      "landmarkId": "brightonpier",
+      "title": "Checking Into The Grand Brighton",
+      "activity": "Arriving by the coast and dropping bags off at our stunning hotel.",
+      "landmarkId": "thegrandbrighton.webp",
       "restaurantId": "restaurant-2"
     },
     {
@@ -71,8 +78,9 @@
       "dayTitle": "Happy Birthday, Larry!",
       "time": "1:00 PM",
       "startTime": "13:00",
-      "activity": "\"Octoberbest\" Lunch for us at The Salt Room (106 King's Rd, Brighton BN1 2FA - right near our hotel).",
-      "landmarkId": "brightonpier",
+      "title": "Octoberbest Lunch",
+      "activity": "Celebrating with an incredible celebratory lunch right by the seafront.",
+      "landmarkId": "seafoodrestaurant.webp",
       "restaurantId": "restaurant-1"
     },
     {
@@ -81,8 +89,9 @@
       "dayTitle": "Happy Birthday, Larry!",
       "time": "3:00 PM",
       "startTime": "15:00",
-      "activity": "We cycle or walk to the Brighton Palace Pier (Madeira Dr, Brighton BN2 1TW).",
-      "landmarkId": "brightonpier"
+      "title": "Brighton Palace Pier Stroll",
+      "activity": "Walking along the iconic pier for sea breeze and arcade fun.",
+      "landmarkId": "brightonpier.webp"
     },
     {
       "id": "2026-10-15-1600-09",
@@ -90,8 +99,9 @@
       "dayTitle": "Happy Birthday, Larry!",
       "time": "4:00 PM",
       "startTime": "16:00",
-      "activity": "We head back to The Grand Brighton to rest.",
-      "landmarkId": "brightonpier",
+      "title": "Hotel Rest & Refresh",
+      "activity": "Heading back to the grand hotel to unwind and recharge.",
+      "landmarkId": "thegrandbrighton.webp",
       "restaurantId": "restaurant-2"
     },
     {
@@ -100,8 +110,9 @@
       "dayTitle": "Happy Birthday, Larry!",
       "time": "6:30 PM",
       "startTime": "18:30",
-      "activity": "Dinner at Cyan, the restaurant inside our hotel.",
-      "landmarkId": "brightonpier",
+      "title": "Dinner at Cyan",
+      "activity": "Enjoying a fantastic birthday dinner inside our hotel restaurant.",
+      "landmarkId": "frenchrestaurant.webp",
       "restaurantId": "restaurant-extra-cyan"
     },
     {
@@ -110,8 +121,9 @@
       "dayTitle": "Happy Birthday, Larry!",
       "time": "8:30 PM",
       "startTime": "20:30",
-      "activity": "We head towards Kemptown (the heart of Brighton's LGBTQ+ scene).",
-      "landmarkId": "brightonpier"
+      "title": "Kemptown Nightlife",
+      "activity": "Diving into the vibrant heart of Brighton's LGBTQ+ scene.",
+      "landmarkId": "clubbing.webp"
     },
     {
       "id": "2026-10-15-2200-12",
@@ -119,8 +131,9 @@
       "dayTitle": "Happy Birthday, Larry!",
       "time": "10:00 PM",
       "startTime": "22:00",
-      "activity": "Drag show at The Queen's Arms (7 George St, Brighton BN2 1RJ). On Thursday nights, the main cabaret/drag acts typically start around 10:00 PM.",
-      "landmarkId": "brightonpier"
+      "title": "Cabaret & Drag Show",
+      "activity": "Catching an amazing live drag show performance to celebrate the night.",
+      "landmarkId": "clubbing.webp"
     },
     {
       "id": "2026-10-15-2330-13",
@@ -128,8 +141,9 @@
       "dayTitle": "Happy Birthday, Larry!",
       "time": "11:30 PM – Late",
       "startTime": "23:30",
-      "activity": "We explore other gay bars in Kemptown (e.g., Charles Street Tap, The Marine Tavern).",
-      "landmarkId": "brightonpier",
+      "title": "Bar Hopping in Kemptown",
+      "activity": "Exploring lively local gay bars and pubs late into the night.",
+      "landmarkId": "clubbing.webp",
       "restaurantId": "restaurant-extra-charles"
     },
     {
@@ -138,8 +152,9 @@
       "dayTitle": "Brighton Memories",
       "time": "10:00 AM",
       "startTime": "10:00",
-      "activity": "We wake up.",
-      "landmarkId": "brightonpier"
+      "title": "Seaside Morning",
+      "activity": "Waking up slow to a beautiful morning by the coast.",
+      "landmarkId": "holidayinn.webp"
     },
     {
       "id": "2026-10-16-1100-15",
@@ -147,8 +162,9 @@
       "dayTitle": "Brighton Memories",
       "time": "11:00 AM",
       "startTime": "11:00",
-      "activity": "We leave the hotel and grab coffee at Ikigai Coffee (180 Edward St, Brighton BN2 0JB).",
-      "landmarkId": "brightonpier",
+      "title": "Morning Coffee Run",
+      "activity": "Stepping out for fresh specialty coffee to kickstart the day.",
+      "landmarkId": "cafe.webp",
       "restaurantId": "restaurant-22"
     },
     {
@@ -157,8 +173,9 @@
       "dayTitle": "Brighton Memories",
       "time": "1:00 PM",
       "startTime": "13:00",
-      "activity": "Brunch at Garden Café Brighton (North Laine area, BN1 1YB).",
-      "landmarkId": "brightonpier"
+      "title": "North Laine Brunch",
+      "activity": "Relaxing over a delicious midday brunch in the artistic North Laine.",
+      "landmarkId": "cafe.webp"
     },
     {
       "id": "2026-10-16-1430-17",
@@ -166,8 +183,9 @@
       "dayTitle": "Brighton Memories",
       "time": "2:30 PM – 4:00 PM",
       "startTime": "14:30",
-      "activity": "We explore the University of Surrey (Stag Hill campus). Note: The University of Surrey is in Guildford, which is a 1-hour and 15-minute train ride from Brighton. We'll need to account for this travel time, or switch this to exploring the University of Sussex, which is actually in Brighton.",
-      "landmarkId": "brightonpier"
+      "title": "Exploring University Grounds",
+      "activity": "Wandering around and exploring the local university campus.",
+      "landmarkId": "brightonpier.webp"
     },
     {
       "id": "2026-10-16-1600-18",
@@ -175,8 +193,9 @@
       "dayTitle": "Brighton Memories",
       "time": "4:00 PM",
       "startTime": "16:00",
-      "activity": "We return to The Grand Brighton to grab our bags and head to our next hotel, the Holiday Inn by the seafront, to rest and reset.",
-      "landmarkId": "brightonpier",
+      "title": "Moving to the Holiday Inn",
+      "activity": "Checking into our new seafront hotel and getting settled.",
+      "landmarkId": "holidayinn.webp",
       "restaurantId": "restaurant-2"
     },
     {
@@ -185,8 +204,9 @@
       "dayTitle": "Brighton Memories",
       "time": "6:00 PM",
       "startTime": "18:00",
-      "activity": "We head to Salt Shed near the West Pier ruins for a 3-meat platter dinner.",
-      "landmarkId": "brightonpier",
+      "title": "Meat Platter Feast",
+      "activity": "Savoring a mouthwatering 3-meat platter dinner near the historic West Pier ruins.",
+      "landmarkId": "steakrestaurant.webp",
       "restaurantId": "restaurant-3"
     },
     {
@@ -195,8 +215,9 @@
       "dayTitle": "Brighton Memories",
       "time": "8:30 PM",
       "startTime": "20:30",
-      "activity": "We grab a pre-show drink at the Victoria Bar inside The Grand Brighton.",
-      "landmarkId": "brightonpier",
+      "title": "Pre-Show Drinks",
+      "activity": "Sipping pre-show cocktails at the Victoria Bar inside The Grand.",
+      "landmarkId": "thegrandbrighton.webp",
       "restaurantId": "restaurant-extra-victoria"
     },
     {
@@ -205,8 +226,9 @@
       "dayTitle": "Brighton Memories",
       "time": "9:30 PM",
       "startTime": "21:30",
-      "activity": "We head to Legends Hotel & Bar (31-34 Marine Parade, Brighton BN2 1TR).",
-      "landmarkId": "brightonpier",
+      "title": "Heading to Legends",
+      "activity": "Arriving at Legends Bar for an unforgettable night out.",
+      "landmarkId": "clubbing.webp",
       "restaurantId": "restaurant-extra-legends"
     },
     {
@@ -215,8 +237,9 @@
       "dayTitle": "Brighton Memories",
       "time": "10:00 PM",
       "startTime": "22:00",
-      "activity": "Friday Night Drag Show begins at Legends.",
-      "landmarkId": "brightonpier",
+      "title": "Friday Night Drag Extravaganza",
+      "activity": "Cheering loud as the headline Friday night drag show kicks off.",
+      "landmarkId": "clubbing.webp",
       "restaurantId": "restaurant-extra-legends"
     },
     {
@@ -225,8 +248,9 @@
       "dayTitle": "Brighton Memories",
       "time": "11:30 PM – Late",
       "startTime": "23:30",
-      "activity": "Legends' Basement Club opens up, or we explore Kemptown for another gay night out.",
-      "landmarkId": "brightonpier",
+      "title": "Basement Club Dancing",
+      "activity": "Hitting the basement dancefloor to party late into the night.",
+      "landmarkId": "clubbing.webp",
       "restaurantId": "restaurant-extra-legends"
     },
     {
@@ -235,8 +259,9 @@
       "dayTitle": "Final Day in Brighton",
       "time": "11:00 AM",
       "startTime": "11:00",
-      "activity": "We grab coffee at Komodo Speciality Coffee (76-77 St George's Rd, Brighton BN2 1EF).",
-      "landmarkId": "brightonpier",
+      "title": "Specialty Coffee Stop",
+      "activity": "Grabbing a quick morning brew to fuel up for the day.",
+      "landmarkId": "cafe.webp",
       "restaurantId": "restaurant-23"
     },
     {
@@ -245,8 +270,9 @@
       "dayTitle": "Final Day in Brighton",
       "time": "11:30 AM",
       "startTime": "11:30",
-      "activity": "Brunch at Rybka Fish and Chips (41 Meeting House Ln, Brighton BN1 1HB).",
-      "landmarkId": "brightonpier",
+      "title": "Seaside Brunch Treat",
+      "activity": "Enjoying a wonderful brunch tucked away in the Lanes.",
+      "landmarkId": "seafoodrestaurant.webp",
       "restaurantId": "restaurant-5"
     },
     {
@@ -255,8 +281,9 @@
       "dayTitle": "Final Day in Brighton",
       "time": "1:00 PM",
       "startTime": "13:00",
-      "activity": "We explore The North Laine shopping area (Sydney Street, Kensington Gardens, Gloucester Road). This is where the famous second-hand and vintage emporium, Snoopers Paradise (7/8 Kensington Gardens), is located.",
-      "landmarkId": "brightonpier"
+      "title": "Vintage Shopping Spree",
+      "activity": "Hunting for unique treasures and vintage gems at Snoopers Paradise.",
+      "landmarkId": "clothshopping.webp"
     },
     {
       "id": "2026-10-17-1500-27",
@@ -264,8 +291,9 @@
       "dayTitle": "Final Day in Brighton",
       "time": "3:00 PM",
       "startTime": "15:00",
-      "activity": "Afternoon tea at That Little Tea Shop (In The Lanes).",
-      "landmarkId": "brightonpier",
+      "title": "Cozy Afternoon Tea",
+      "activity": "Sipping fine tea and enjoying sweet treats in a hidden historic tearoom.",
+      "landmarkId": "afternoontea.webp",
       "restaurantId": "restaurant-6"
     },
     {
@@ -274,8 +302,9 @@
       "dayTitle": "Final Day in Brighton",
       "time": "4:00 PM",
       "startTime": "16:00",
-      "activity": "We explore the Royal Pavilion and the surrounding Pavilion Gardens.",
-      "landmarkId": "brightonpavilion"
+      "title": "Royal Pavilion Gardens",
+      "activity": "Strolling through the gorgeous grounds of the iconic Royal Pavilion.",
+      "landmarkId": "brightonpavilion.webp"
     },
     {
       "id": "2026-10-17-1700-29",
@@ -283,8 +312,9 @@
       "dayTitle": "Final Day in Brighton",
       "time": "5:00 PM",
       "startTime": "17:00",
-      "activity": "We head back to the Holiday Inn by the seafront to collect our suitcases.",
-      "landmarkId": "brightonpier"
+      "title": "Collecting Luggage",
+      "activity": "Heading back to the Holiday Inn to pick up our suitcases.",
+      "landmarkId": "holidayinn.webp"
     },
     {
       "id": "2026-10-17-1800-30",
@@ -292,8 +322,9 @@
       "dayTitle": "Final Day in Brighton",
       "time": "6:00 PM",
       "startTime": "18:00",
-      "activity": "We head to Brighton Train Station and catch the train back to London.",
-      "landmarkId": "brightonpier"
+      "title": "Train Back to London",
+      "activity": "Boarding the evening train back home after an unforgettable getaway.",
+      "landmarkId": "brightonpier.webp"
     },
     {
       "id": "2026-10-17-2000-31",
@@ -301,8 +332,9 @@
       "dayTitle": "Final Day in Brighton",
       "time": "8:00 PM",
       "startTime": "20:00",
-      "activity": "We arrive back at Barina's apartment for a movie night and destress with Barina and Amir.",
-      "landmarkId": "apartment"
+      "title": "Movie Night Back Home",
+      "activity": "Unwinding with a cozy movie night alongside Barina and Amir.",
+      "landmarkId": "movieatapartment.webp"
     },
     {
       "id": "2026-10-18-1100-32",
@@ -310,8 +342,9 @@
       "dayTitle": "Cousins & Windsor",
       "time": "11:00 AM",
       "startTime": "11:00",
-      "activity": "Brunch with Amir and Barina at The Malt Shovel (69 Iver Ln, Cowley, Uxbridge UB8 2JE).",
-      "landmarkId": "apartment",
+      "title": "Family Brunch Gathering",
+      "activity": "Enjoying a lovely brunch together with Amir and Barina.",
+      "landmarkId": "britishrestaurantpub.webp",
       "restaurantId": "restaurant-7"
     },
     {
@@ -320,8 +353,9 @@
       "dayTitle": "Cousins & Windsor",
       "time": "2:00 PM",
       "startTime": "14:00",
-      "activity": "We explore Windsor Castle (Windsor SL4 1NJ - about a 20-min drive from Uxbridge).",
-      "landmarkId": "windsorcastle"
+      "title": "Exploring Windsor Castle",
+      "activity": "Touring the historic royal fortress and ancient stone grounds.",
+      "landmarkId": "windsorcastle.webp"
     },
     {
       "id": "2026-10-18-1700-34",
@@ -329,8 +363,9 @@
       "dayTitle": "Cousins & Windsor",
       "time": "5:00 PM",
       "startTime": "17:00",
-      "activity": "My cousin meet-up and our dinner in the Windsor/Uxbridge area.",
-      "landmarkId": "windsorcastle"
+      "title": "Cousin Dinner Catchup",
+      "activity": "Meeting up with family for a wonderful dinner in the area.",
+      "landmarkId": "apartment.webp"
     },
     {
       "id": "2026-10-19-0900-35",
@@ -338,8 +373,9 @@
       "dayTitle": "Bhabs Work From Home Day",
       "time": "9:00 AM",
       "startTime": "09:00",
-      "activity": "We have breakfast at Barina's apartment.",
-      "landmarkId": "apartment"
+      "title": "Apartment Breakfast",
+      "activity": "Starting the day right with a quiet breakfast at home.",
+      "landmarkId": "cookingatapartment.webp"
     },
     {
       "id": "2026-10-19-1100-36",
@@ -347,8 +383,9 @@
       "dayTitle": "Bhabs Work From Home Day",
       "time": "11:00 AM",
       "startTime": "11:00",
-      "activity": "We have lunch at Barina's apartment, followed by a walk by the Grand Union Canal with tea.",
-      "landmarkId": "canal"
+      "title": "Canal-Side Tea Walk",
+      "activity": "Taking a peaceful stroll alongside the scenic Grand Union Canal.",
+      "landmarkId": "canal.webp"
     },
     {
       "id": "2026-10-19-1400-37",
@@ -356,8 +393,9 @@
       "dayTitle": "Bhabs Work From Home Day",
       "time": "2:00 PM",
       "startTime": "14:00",
-      "activity": "Afternoon tea at The Espresso Bakery (Uxbridge).",
-      "landmarkId": "apartment"
+      "title": "Afternoon Bakery Treat",
+      "activity": "Stopping by a local bakery for fresh pastries and hot tea.",
+      "landmarkId": "cafe.webp"
     },
     {
       "id": "2026-10-19-1800-38",
@@ -365,8 +403,9 @@
       "dayTitle": "Bhabs Work From Home Day",
       "time": "6:00 PM",
       "startTime": "18:00",
-      "activity": "We head to the gym in Uxbridge together.",
-      "landmarkId": "apartment"
+      "title": "Workout Session",
+      "activity": "Hitting the local gym together for an energizing evening workout.",
+      "landmarkId": "gym.webp"
     },
     {
       "id": "2026-10-19-1900-39",
@@ -374,8 +413,9 @@
       "dayTitle": "Bhabs Work From Home Day",
       "time": "7:00 PM",
       "startTime": "19:00",
-      "activity": "Dinner with Sese and Shabina.",
-      "landmarkId": "bigben"
+      "title": "Dinner with Friends",
+      "activity": "Sharing great food and laughs over dinner with Sese and Shabina.",
+      "landmarkId": "bigben.webp"
     },
     {
       "id": "2026-10-20-0600-40",
@@ -383,8 +423,9 @@
       "dayTitle": "Exploring Soho & Central London",
       "time": "6:00 AM",
       "startTime": "06:00",
-      "activity": "We have breakfast at Barina's apartment.",
-      "landmarkId": "apartment"
+      "title": "Early Morning Breakfast",
+      "activity": "Fueling up early at the apartment before heading into town.",
+      "landmarkId": "cookingatapartment.webp"
     },
     {
       "id": "2026-10-20-0700-41",
@@ -392,8 +433,9 @@
       "dayTitle": "Exploring Soho & Central London",
       "time": "7:00 AM",
       "startTime": "07:00",
-      "activity": "I'll be exploring The British Museum (Great Russell St).",
-      "landmarkId": "britishmuseum",
+      "title": "Discovering The British Museum",
+      "activity": "Wandering through world-famous galleries and historic artifacts.",
+      "landmarkId": "britishmuseum.webp",
       "nearestStudySpotId": "british-museum"
     },
     {
@@ -402,8 +444,9 @@
       "dayTitle": "Exploring Soho & Central London",
       "time": "12:00 PM (Sharp)",
       "startTime": "12:00",
-      "activity": "We meet up for lunch at Bao Soho (53 Lexington St, Carnaby, London W1F 9AS).",
-      "landmarkId": "bigben",
+      "title": "Bao Lunch in Soho",
+      "activity": "Meeting up for incredible Taiwanese steamed buns in the heart of Soho.",
+      "landmarkId": "frenchrestaurant.webp",
       "restaurantId": "restaurant-9",
       "nearestStudySpotId": "foyles"
     },
@@ -413,8 +456,9 @@
       "dayTitle": "Exploring Soho & Central London",
       "time": "1:30 PM",
       "startTime": "13:30",
-      "activity": "I'll spend the afternoon walking through Covent Garden Market and Neal's Yard.",
-      "landmarkId": "bigben"
+      "title": "Covent Garden Stroll",
+      "activity": "Exploring the lively market stalls and colorful hidden courtyards.",
+      "landmarkId": "clothshopping.webp"
     },
     {
       "id": "2026-10-20-1600-44",
@@ -422,8 +466,9 @@
       "dayTitle": "Exploring Soho & Central London",
       "time": "4:00 PM",
       "startTime": "16:00",
-      "activity": "We get afternoon coffee at Italian Bear Chocolate (41 Broadwick St, Soho - famous for melting chocolate over the cups).",
-      "landmarkId": "bigben",
+      "title": "Melting Hot Chocolate",
+      "activity": "Treating ourselves to rich, decadent hot chocolate in Soho.",
+      "landmarkId": "cafe.webp",
       "restaurantId": "restaurant-10",
       "nearestStudySpotId": "foyles"
     },
@@ -433,8 +478,9 @@
       "dayTitle": "Exploring Soho & Central London",
       "time": "5:30 PM",
       "startTime": "17:30",
-      "activity": "I pick you up from work.",
-      "landmarkId": "bigben"
+      "title": "After-Work Pickup",
+      "activity": "Meeting up right after work to continue the evening adventure.",
+      "landmarkId": "bigben.webp"
     },
     {
       "id": "2026-10-20-1800-46",
@@ -442,8 +488,9 @@
       "dayTitle": "Exploring Soho & Central London",
       "time": "6:00 PM",
       "startTime": "18:00",
-      "activity": "We go window shopping at COS (Regent Street or Covent Garden).",
-      "landmarkId": "bigben"
+      "title": "Window Shopping",
+      "activity": "Browsing contemporary styles along Regent Street and Covent Garden.",
+      "landmarkId": "clothshopping.webp"
     },
     {
       "id": "2026-10-20-1930-47",
@@ -451,8 +498,9 @@
       "dayTitle": "Exploring Soho & Central London",
       "time": "7:30 PM",
       "startTime": "19:30",
-      "activity": "We have dinner with the HK girls (Recommend: Kiln or Dishoom in Soho).",
-      "landmarkId": "bigben",
+      "title": "Dinner with Friends",
+      "activity": "Enjoying vibrant flavors and great company at a bustling Soho hotspot.",
+      "landmarkId": "frenchrestaurant.webp",
       "restaurantId": "restaurant-extra-kiln"
     },
     {
@@ -461,8 +509,9 @@
       "dayTitle": "Exploring Soho & Central London",
       "time": "9:30 PM",
       "startTime": "21:30",
-      "activity": "We head back to Barina's apartment.",
-      "landmarkId": "apartment"
+      "title": "Head Back Home",
+      "activity": "Heading back to the apartment to rest up for another exciting day.",
+      "landmarkId": "movieatapartment.webp"
     },
     {
       "id": "2026-10-21-0700-49",
@@ -470,8 +519,9 @@
       "dayTitle": "Touristy Walk, Pies and Dance/Drag",
       "time": "7:00 AM",
       "startTime": "07:00",
-      "activity": "We have breakfast at Barina's apartment.",
-      "landmarkId": "apartment"
+      "title": "Morning Breakfast",
+      "activity": "Starting the morning with a healthy breakfast at home.",
+      "landmarkId": "cookingatapartment.webp"
     },
     {
       "id": "2026-10-21-0800-50",
@@ -479,8 +529,9 @@
       "dayTitle": "Touristy Walk, Pies and Dance/Drag",
       "time": "8:00 AM",
       "startTime": "08:00",
-      "activity": "I'll walk the South Bank (Tate Modern, Shakespeare's Globe, London Eye, British parliament, Big Ben).",
-      "landmarkId": "britishmuseum",
+      "title": "South Bank Landmark Walk",
+      "activity": "Taking in iconic views along the Thames past the London Eye and Big Ben.",
+      "landmarkId": "bigben.webp",
       "nearestStudySpotId": "bfi-southbank"
     },
     {
@@ -489,8 +540,9 @@
       "dayTitle": "Touristy Walk, Pies and Dance/Drag",
       "time": "12:00 PM (Sharp)",
       "startTime": "12:00",
-      "activity": "We meet for lunch at The Pie Room at Holborn Dining Room (Near Covent Garden/Holborn).",
-      "landmarkId": "bigben",
+      "title": "Legendary Pie Lunch",
+      "activity": "Indulging in exquisite savory pies at the gorgeous Holborn Dining Room.",
+      "landmarkId": "britishrestaurantpub.webp",
       "restaurantId": "restaurant-12",
       "nearestStudySpotId": "foyles"
     },
@@ -500,8 +552,9 @@
       "dayTitle": "Touristy Walk, Pies and Dance/Drag",
       "time": "1:30 PM",
       "startTime": "13:30",
-      "activity": "I'll explore Somerset House and The Courtauld Gallery.",
-      "landmarkId": "britishmuseum",
+      "title": "Art at Somerset House",
+      "activity": "Admiring stunning artistic masterpieces at the Courtauld Gallery.",
+      "landmarkId": "britishmuseum.webp",
       "nearestStudySpotId": "bfi-southbank"
     },
     {
@@ -510,8 +563,9 @@
       "dayTitle": "Touristy Walk, Pies and Dance/Drag",
       "time": "5:00 PM",
       "startTime": "17:00",
-      "activity": "I pick you up from work.",
-      "landmarkId": "bigben"
+      "title": "Evening Meetup",
+      "activity": "Catching up and meeting up right after work hours.",
+      "landmarkId": "bigben.webp"
     },
     {
       "id": "2026-10-21-1815-54",
@@ -519,8 +573,9 @@
       "dayTitle": "Touristy Walk, Pies and Dance/Drag",
       "time": "6:15 PM",
       "startTime": "18:15",
-      "activity": "Split Option:\nOption A: We head to Imperial College Dance Class (South Kensington)-> We have dinner at Barina's apartment.\nOption B: We hit up drag shows in Soho (e.g., The Admiral Duncan) -> Dinner at Yeye Noodle and Dumpling (14 Stewart's Pl) -> Dessert at Chin Chin Labs (54 Greek St, Soho).",
-      "landmarkId": "apartment"
+      "title": "Dance Class or Soho Drag",
+      "activity": "Choosing between an energetic dance workout or a fabulous Soho drag night.",
+      "landmarkId": "clubbing.webp"
     },
     {
       "id": "2026-10-21-2200-55",
@@ -528,8 +583,9 @@
       "dayTitle": "Touristy Walk, Pies and Dance/Drag",
       "time": "10:00 PM",
       "startTime": "22:00",
-      "activity": "We head back to Barina's apartment.",
-      "landmarkId": "apartment"
+      "title": "Return to Apartment",
+      "activity": "Wrapping up a fun-filled day and heading home to rest.",
+      "landmarkId": "apartment.webp"
     },
     {
       "id": "2026-10-22-0600-56",
@@ -537,8 +593,9 @@
       "dayTitle": "Exploring Mayfair and South Kensington",
       "time": "6:00 AM",
       "startTime": "06:00",
-      "activity": "We have breakfast at Barina's apartment.",
-      "landmarkId": "apartment"
+      "title": "Early Morning Start",
+      "activity": "Fueling up for an action-packed museum and shopping day.",
+      "landmarkId": "cookingatapartment.webp"
     },
     {
       "id": "2026-10-22-0700-57",
@@ -546,8 +603,9 @@
       "dayTitle": "Exploring Mayfair and South Kensington",
       "time": "7:00 AM",
       "startTime": "07:00",
-      "activity": "I'll explore the Natural History Museum, V&A Museum",
-      "landmarkId": "britishmuseum",
+      "title": "Museum Treasures",
+      "activity": "Exploring the magnificent halls of the Natural History and V&A museums.",
+      "landmarkId": "britishmuseum.webp",
       "nearestStudySpotId": "bfi-southbank"
     },
     {
@@ -556,8 +614,9 @@
       "dayTitle": "Exploring Mayfair and South Kensington",
       "time": "12:00 PM",
       "startTime": "12:00",
-      "activity": "We grab lunch at Berwick Street Market (Soho - great street food stalls).",
-      "landmarkId": "bigben",
+      "title": "Berwick Street Market Lunch",
+      "activity": "Sampling delicious global street food stalls in lively Soho.",
+      "landmarkId": "cafe.webp",
       "restaurantId": "restaurant-15",
       "nearestStudySpotId": "foyles"
     },
@@ -567,8 +626,9 @@
       "dayTitle": "Exploring Mayfair and South Kensington",
       "time": "1:30 PM",
       "startTime": "13:30",
-      "activity": "I'll visit The National Gallery (Trafalgar Square).",
-      "landmarkId": "britishmuseum",
+      "title": "The National Gallery",
+      "activity": "Viewing world-famous paintings overlooking Trafalgar Square.",
+      "landmarkId": "britishmuseum.webp",
       "nearestStudySpotId": "foyles"
     },
     {
@@ -577,8 +637,9 @@
       "dayTitle": "Exploring Mayfair and South Kensington",
       "time": "5:30 PM",
       "startTime": "17:30",
-      "activity": "I pick you up from work.",
-      "landmarkId": "bigben"
+      "title": "After-Work Meetup",
+      "activity": "Meeting up as the evening begins to explore the West End.",
+      "landmarkId": "bigben.webp"
     },
     {
       "id": "2026-10-22-1800-61",
@@ -586,8 +647,9 @@
       "dayTitle": "Exploring Mayfair and South Kensington",
       "time": "6:00 PM",
       "startTime": "18:00",
-      "activity": "We explore Mayfair (Walk down Bond Street and through Burlington Arcade).",
-      "landmarkId": "bigben"
+      "title": "Strolling Through Mayfair",
+      "activity": "Window shopping along luxury Bond Street and historic Burlington Arcade.",
+      "landmarkId": "clothshopping.webp"
     },
     {
       "id": "2026-10-22-2000-62",
@@ -595,8 +657,9 @@
       "dayTitle": "Exploring Mayfair and South Kensington",
       "time": "8:00 PM",
       "startTime": "20:00",
-      "activity": "We have dinner at Flat Iron or similar near Woodstock Street / Mayfair.",
-      "landmarkId": "bigben"
+      "title": "Dinner in Mayfair",
+      "activity": "Savoring a wonderful dinner at a cozy Mayfair restaurant.",
+      "landmarkId": "steakrestaurant.webp"
     },
     {
       "id": "2026-10-22-2200-63",
@@ -604,8 +667,9 @@
       "dayTitle": "Exploring Mayfair and South Kensington",
       "time": "10:00 PM",
       "startTime": "22:00",
-      "activity": "We head back to Barina's apartment.",
-      "landmarkId": "apartment"
+      "title": "Heading Back Home",
+      "activity": "Returning to the apartment for a relaxing night's rest.",
+      "landmarkId": "movieatapartment.webp"
     },
     {
       "id": "2026-10-23-0600-64",
@@ -613,8 +677,9 @@
       "dayTitle": "Bhabs Work From Home Day",
       "time": "6:00 AM",
       "startTime": "06:00",
-      "activity": "We have breakfast at Barina's apartment.",
-      "landmarkId": "apartment"
+      "title": "Quiet Morning Breakfast",
+      "activity": "Starting the morning calmly at home.",
+      "landmarkId": "cookingatapartment.webp"
     },
     {
       "id": "2026-10-23-0700-65",
@@ -622,8 +687,9 @@
       "dayTitle": "Bhabs Work From Home Day",
       "time": "7:00 AM",
       "startTime": "07:00",
-      "activity": "We head to the gym together.",
-      "landmarkId": "apartment"
+      "title": "Morning Gym Session",
+      "activity": "Working out together to stay active and refreshed.",
+      "landmarkId": "gym.webp"
     },
     {
       "id": "2026-10-23-1100-66",
@@ -631,8 +697,9 @@
       "dayTitle": "Bhabs Work From Home Day",
       "time": "11:00 AM",
       "startTime": "11:00",
-      "activity": "Lunch at Barina's apartment.",
-      "landmarkId": "apartment"
+      "title": "Home-Cooked Lunch",
+      "activity": "Enjoying a relaxing midday meal at the apartment.",
+      "landmarkId": "cookingatapartment.webp"
     },
     {
       "id": "2026-10-23-1500-67",
@@ -640,8 +707,9 @@
       "dayTitle": "Bhabs Work From Home Day",
       "time": "3:00 PM",
       "startTime": "15:00",
-      "activity": "Afternoon tea at The WatersEdge (Canal-side pub in Cowley/Uxbridge).",
-      "landmarkId": "canal",
+      "title": "Canal-Side Afternoon Tea",
+      "activity": "Relaxing with tea at a cozy waterside pub.",
+      "landmarkId": "canal.webp",
       "restaurantId": "restaurant-21"
     },
     {
@@ -650,8 +718,9 @@
       "dayTitle": "Bhabs Work From Home Day",
       "time": "5:00 PM",
       "startTime": "17:00",
-      "activity": "We explore the local Uxbridge/Cowley area.",
-      "landmarkId": "apartment"
+      "title": "Local Area Walk",
+      "activity": "Exploring the neighborhood nooks around Uxbridge and Cowley.",
+      "landmarkId": "apartment.webp"
     },
     {
       "id": "2026-10-23-1930-69",
@@ -659,8 +728,9 @@
       "dayTitle": "Bhabs Work From Home Day",
       "time": "7:30 PM",
       "startTime": "19:30",
-      "activity": "Dinner at Barina's apartment.",
-      "landmarkId": "apartment"
+      "title": "Cozy Dinner In",
+      "activity": "Relaxing over a peaceful dinner at home.",
+      "landmarkId": "movieatapartment.webp"
     },
     {
       "id": "2026-10-24-0800-70",
@@ -668,8 +738,9 @@
       "dayTitle": "Double Date and a Gay Evening",
       "time": "8:00 AM",
       "startTime": "08:00",
-      "activity": "Breakfast at Barina's apartment with Amir and Barina.",
-      "landmarkId": "apartment"
+      "title": "Group Breakfast",
+      "activity": "Enjoying breakfast with Amir and Barina before a big day out.",
+      "landmarkId": "cookingatapartment.webp"
     },
     {
       "id": "2026-10-24-1000-71",
@@ -677,8 +748,9 @@
       "dayTitle": "Double Date and a Gay Evening",
       "time": "10:00 AM",
       "startTime": "10:00",
-      "activity": "We head to Notting Hill (Portobello Road Market area).",
-      "landmarkId": "bigben"
+      "title": "Notting Hill & Portobello",
+      "activity": "Wandering through colorful pastel streets and vibrant market stalls.",
+      "landmarkId": "clothshopping.webp"
     },
     {
       "id": "2026-10-24-1200-72",
@@ -686,8 +758,9 @@
       "dayTitle": "Double Date and a Gay Evening",
       "time": "12:00 PM",
       "startTime": "12:00",
-      "activity": "We head to Kensington (Visit Daunt Books or Waterstones).",
-      "landmarkId": "bigben"
+      "title": "Bookstore Browsing",
+      "activity": "Stopping by iconic bookshops like Daunt Books in Kensington.",
+      "landmarkId": "clothshopping.webp"
     },
     {
       "id": "2026-10-24-1300-73",
@@ -695,8 +768,9 @@
       "dayTitle": "Double Date and a Gay Evening",
       "time": "1:00 PM",
       "startTime": "13:00",
-      "activity": "Window shopping (Harrods in Knightsbridge).",
-      "landmarkId": "bigben",
+      "title": "Luxury Window Shopping",
+      "activity": "Admiring the stunning window displays at Harrods in Knightsbridge.",
+      "landmarkId": "clothshopping.webp",
       "restaurantId": "restaurant-18"
     },
     {
@@ -705,8 +779,9 @@
       "dayTitle": "Double Date and a Gay Evening",
       "time": "1:30 PM",
       "startTime": "13:30",
-      "activity": "Lunch near Knightsbridge .",
-      "landmarkId": "bigben"
+      "title": "Knightsbridge Lunch",
+      "activity": "Grabbing a wonderful bite to eat near the heart of Knightsbridge.",
+      "landmarkId": "britishrestaurantpub.webp"
     },
     {
       "id": "2026-10-24-1430-75",
@@ -714,8 +789,9 @@
       "dayTitle": "Double Date and a Gay Evening",
       "time": "2:30 PM",
       "startTime": "14:30",
-      "activity": "We cycle to Buckingham Palace.",
-      "landmarkId": "bigben"
+      "title": "Cycling to Buckingham Palace",
+      "activity": "Taking a scenic bike ride down to the royal residence.",
+      "landmarkId": "bigben.webp"
     },
     {
       "id": "2026-10-24-1600-76",
@@ -723,8 +799,9 @@
       "dayTitle": "Double Date and a Gay Evening",
       "time": "4:00 PM",
       "startTime": "16:00",
-      "activity": "Window shopping on Regent Street.",
-      "landmarkId": "bigben"
+      "title": "Regent Street Stroll",
+      "activity": "Window shopping along bustling Regent Street.",
+      "landmarkId": "clothshopping.webp"
     },
     {
       "id": "2026-10-24-1830-77",
@@ -732,8 +809,9 @@
       "dayTitle": "Double Date and a Gay Evening",
       "time": "6:30 PM",
       "startTime": "18:30",
-      "activity": "We head to the Barbican Centre Conservatory or Highwalks for views.",
-      "landmarkId": "bigben"
+      "title": "Barbican Conservatory Views",
+      "activity": "Discovering the incredible indoor tropical oasis and highwalks.",
+      "landmarkId": "bigben.webp"
     },
     {
       "id": "2026-10-24-1930-78",
@@ -741,8 +819,9 @@
       "dayTitle": "Double Date and a Gay Evening",
       "time": "7:30 PM",
       "startTime": "19:30",
-      "activity": "We walk by St Paul's Cathedral at dusk.",
-      "landmarkId": "bigben"
+      "title": "St. Paul's at Dusk",
+      "activity": "Admiring the magnificent cathedral lit up against the evening sky.",
+      "landmarkId": "bigben.webp"
     },
     {
       "id": "2026-10-24-2030-79",
@@ -750,8 +829,9 @@
       "dayTitle": "Double Date and a Gay Evening",
       "time": "8:30 PM",
       "startTime": "20:30",
-      "activity": "Dinner in Soho.",
-      "landmarkId": "bigben"
+      "title": "Soho Dinner",
+      "activity": "Enjoying a fantastic dinner right in the center of Soho.",
+      "landmarkId": "frenchrestaurant.webp"
     },
     {
       "id": "2026-10-24-2200-80",
@@ -759,8 +839,9 @@
       "dayTitle": "Double Date and a Gay Evening",
       "time": "10:00 PM",
       "startTime": "22:00",
-      "activity": "Dessert Gelupo in Soho.",
-      "landmarkId": "bigben",
+      "title": "Gelato Treat",
+      "activity": "Stopping by Gelupo for some of the best artisan gelato in town.",
+      "landmarkId": "cafe.webp",
       "restaurantId": "restaurant-19"
     },
     {
@@ -769,8 +850,9 @@
       "dayTitle": "Double Date and a Gay Evening",
       "time": "11:00 PM – Late",
       "startTime": "23:00",
-      "activity": "We go bar hopping at The Admiral Duncan, Halfway to Heaven, and Clubbing at Heaven (Under the Arches, Villiers St, London WC2N 6NG).",
-      "landmarkId": "bigben"
+      "title": "Epic Club Night",
+      "activity": "Bar hopping and dancing the night away at legendary London clubs.",
+      "landmarkId": "clubbing.webp"
     },
     {
       "id": "2026-10-25-1000-82",
@@ -778,8 +860,9 @@
       "dayTitle": "Bhabs & Larry Day",
       "time": "10:00 AM",
       "startTime": "10:00",
-      "activity": "Breakfast at Barina's apartment with Amir and Barina.",
-      "landmarkId": "apartment"
+      "title": "Morning Breakfast",
+      "activity": "Enjoying a relaxed morning breakfast with Amir and Barina.",
+      "landmarkId": "cookingatapartment.webp"
     },
     {
       "id": "2026-10-25-1130-83",
@@ -787,8 +870,9 @@
       "dayTitle": "Bhabs & Larry Day",
       "time": "11:30 AM",
       "startTime": "11:30",
-      "activity": "We explore Camden Market with Mia & Reece",
-      "landmarkId": "bigben"
+      "title": "Camden Market Adventure",
+      "activity": "Exploring Camden Market stalls and canalside vibes with Mia and Reece.",
+      "landmarkId": "clothshopping.webp"
     },
     {
       "id": "2026-10-25-1330-84",
@@ -796,8 +880,9 @@
       "dayTitle": "Bhabs & Larry Day",
       "time": "1:30 PM",
       "startTime": "13:30",
-      "activity": "We head to Shoreditch to explore Brick Lane.",
-      "landmarkId": "bigben"
+      "title": "Brick Lane Exploration",
+      "activity": "Wandering through the vibrant street art and culture of Shoreditch.",
+      "landmarkId": "clothshopping.webp"
     },
     {
       "id": "2026-10-25-1430-85",
@@ -805,8 +890,9 @@
       "dayTitle": "Bhabs & Larry Day",
       "time": "2:30 PM",
       "startTime": "14:30",
-      "activity": "Lunch at The Blues Kitchen (134-146 Curtain Rd, Shoreditch).",
-      "landmarkId": "bigben"
+      "title": "Blues Kitchen Lunch",
+      "activity": "Enjoying hearty comfort food and great atmosphere on Curtain Road.",
+      "landmarkId": "steakrestaurant.webp"
     },
     {
       "id": "2026-10-25-1600-86",
@@ -814,8 +900,9 @@
       "dayTitle": "Bhabs & Larry Day",
       "time": "4:00 PM",
       "startTime": "16:00",
-      "activity": "We explore Spitalfields Market.",
-      "landmarkId": "bigben"
+      "title": "Spitalfields Market",
+      "activity": "Browsing independent designer stalls and historic market halls.",
+      "landmarkId": "clothshopping.webp"
     },
     {
       "id": "2026-10-25-1730-87",
@@ -823,8 +910,9 @@
       "dayTitle": "Bhabs & Larry Day",
       "time": "5:30 PM",
       "startTime": "17:30",
-      "activity": "Coffee/drinks at Sky Garden (Must book free tickets 3 weeks in advance!).",
-      "landmarkId": "bigben"
+      "title": "Sky Garden Drinks",
+      "activity": "Sipping drinks high above the city with panoramic skyline views.",
+      "landmarkId": "bigben.webp"
     },
     {
       "id": "2026-10-25-1830-88",
@@ -832,8 +920,9 @@
       "dayTitle": "Bhabs & Larry Day",
       "time": "6:30 PM",
       "startTime": "18:30",
-      "activity": "We walk across Tower Bridge.",
-      "landmarkId": "bigben"
+      "title": "Tower Bridge Walk",
+      "activity": "Crossing the iconic landmark as evening sets in over the Thames.",
+      "landmarkId": "bigben.webp"
     },
     {
       "id": "2026-10-25-1900-89",
@@ -841,8 +930,9 @@
       "dayTitle": "Bhabs & Larry Day",
       "time": "7:00 PM",
       "startTime": "19:00",
-      "activity": "Dinner at Barina's apartment",
-      "landmarkId": "apartment"
+      "title": "Dinner Back Home",
+      "activity": "Returning to the apartment for a warm, cozy group dinner.",
+      "landmarkId": "movieatapartment.webp"
     },
     {
       "id": "2026-10-26-0600-90",
@@ -850,8 +940,9 @@
       "dayTitle": "Cuddle Bhabs Day",
       "time": "6:00 AM",
       "startTime": "06:00",
-      "activity": "We have breakfast at Barina's apartment.",
-      "landmarkId": "apartment"
+      "title": "Early Morning Breakfast",
+      "activity": "Quiet morning breakfast together at home.",
+      "landmarkId": "cookingatapartment.webp"
     },
     {
       "id": "2026-10-26-0700-91",
@@ -859,8 +950,9 @@
       "dayTitle": "Cuddle Bhabs Day",
       "time": "7:00 AM",
       "startTime": "07:00",
-      "activity": "We head to the gym.",
-      "landmarkId": "apartment"
+      "title": "Morning Gym Routine",
+      "activity": "Quick morning workout to start the day strong.",
+      "landmarkId": "gym.webp"
     },
     {
       "id": "2026-10-26-0900-92",
@@ -868,8 +960,9 @@
       "dayTitle": "Cuddle Bhabs Day",
       "time": "9:00 AM",
       "startTime": "09:00",
-      "activity": "Chill with Bhabs",
-      "landmarkId": "bigben"
+      "title": "Chill Morning Together",
+      "activity": "Relaxing and spending quality time together.",
+      "landmarkId": "apartment.webp"
     },
     {
       "id": "2026-10-26-1100-93",
@@ -877,8 +970,9 @@
       "dayTitle": "Cuddle Bhabs Day",
       "time": "11:00 AM",
       "startTime": "11:00",
-      "activity": "Lunch at Barina's apartment.",
-      "landmarkId": "apartment"
+      "title": "Apartment Lunch",
+      "activity": "Enjoying a casual midday meal at home.",
+      "landmarkId": "cookingatapartment.webp"
     },
     {
       "id": "2026-10-26-1200-94",
@@ -886,8 +980,9 @@
       "dayTitle": "Cuddle Bhabs Day",
       "time": "12:00 PM",
       "startTime": "12:00",
-      "activity": "We walk by the canal.",
-      "landmarkId": "canal"
+      "title": "Peaceful Canal Walk",
+      "activity": "Taking a quiet, romantic stroll along the canal.",
+      "landmarkId": "canal.webp"
     },
     {
       "id": "2026-10-26-1400-95",
@@ -895,8 +990,9 @@
       "dayTitle": "Cuddle Bhabs Day",
       "time": "2:00 PM",
       "startTime": "14:00",
-      "activity": "Work with Bhabs",
-      "landmarkId": "bigben"
+      "title": "Afternoon Work Session",
+      "activity": "Catching up on tasks side-by-side.",
+      "landmarkId": "apartment.webp"
     },
     {
       "id": "2026-10-26-1800-96",
@@ -904,8 +1000,9 @@
       "dayTitle": "Cuddle Bhabs Day",
       "time": "6:00 PM",
       "startTime": "18:00",
-      "activity": "Iranian Dinner w Barina and Amir",
-      "landmarkId": "apartment"
+      "title": "Iranian Dinner Feast",
+      "activity": "Sharing a wonderful home-cooked Iranian dinner with Barina and Amir.",
+      "landmarkId": "cookingatapartment.webp"
     },
     {
       "id": "2026-10-26-2000-97",
@@ -913,8 +1010,9 @@
       "dayTitle": "Cuddle Bhabs Day",
       "time": "8:00 PM",
       "startTime": "20:00",
-      "activity": "Movies and chill night in with Barina and Amir.",
-      "landmarkId": "apartment"
+      "title": "Movie & Chill Night",
+      "activity": "Snuggling up for a cozy movie night with everyone.",
+      "landmarkId": "movieatapartment.webp"
     },
     {
       "id": "2026-10-27-0800-98",
@@ -922,8 +1020,9 @@
       "dayTitle": "Final Day in London",
       "time": "8:00 AM",
       "startTime": "08:00",
-      "activity": "We have breakfast at Barina's apartment.",
-      "landmarkId": "apartment"
+      "title": "Morning Breakfast",
+      "activity": "Savoring our last morning breakfast together at the apartment.",
+      "landmarkId": "cookingatapartment.webp"
     },
     {
       "id": "2026-10-27-0900-99",
@@ -931,8 +1030,9 @@
       "dayTitle": "Final Day in London",
       "time": "9:00 AM",
       "startTime": "09:00",
-      "activity": "Our final walk by the canal.",
-      "landmarkId": "canal"
+      "title": "Final Canal Walk",
+      "activity": "Taking one last peaceful walk along the waterside.",
+      "landmarkId": "canal.webp"
     },
     {
       "id": "2026-10-27-1200-100",
@@ -940,8 +1040,9 @@
       "dayTitle": "Final Day in London",
       "time": "12:00 PM",
       "startTime": "12:00",
-      "activity": "We have lunch at The WatersEdge (Uxbridge).",
-      "landmarkId": "canal",
+      "title": "WatersEdge Farewell Lunch",
+      "activity": "Enjoying a lovely final lunch at The WatersEdge.",
+      "landmarkId": "britishrestaurantpub.webp",
       "restaurantId": "restaurant-21"
     },
     {
@@ -950,8 +1051,9 @@
       "dayTitle": "Final Day in London",
       "time": "2:00 PM",
       "startTime": "14:00",
-      "activity": "Afternoon tea at Barina's apartment.",
-      "landmarkId": "apartment"
+      "title": "Relaxing Afternoon Tea",
+      "activity": "Sharing sweet final moments over tea before heading out.",
+      "landmarkId": "cookingatapartment.webp"
     },
     {
       "id": "2026-10-27-1750-102",
@@ -959,8 +1061,9 @@
       "dayTitle": "Final Day in London",
       "time": "5:50 PM",
       "startTime": "17:50",
-      "activity": "I head to the airport (LHR) for my flight home!",
-      "landmarkId": "bigben"
+      "title": "Heading Home",
+      "activity": "Heading to Heathrow Airport for the flight back home!",
+      "landmarkId": "departureairport.webp"
     }
   ]
 }

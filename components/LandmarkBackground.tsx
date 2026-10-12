@@ -17,6 +17,16 @@ const LANDMARK_IMAGES: Record<string, string> = {
   brightonpavilion: '/images/landmarks/brightonpavilion.webp',
   pavilion: '/images/landmarks/brightonpavilion.webp',
   apartment: '/images/landmarks/apartment.webp',
+  airport: '/images/landmarks/airport.webp',
+  britishrestaurantpub: '/images/landmarks/britishrestaurantpub.webp',
+  cafe: '/images/landmarks/cafe.webp',
+  clubbing: '/images/landmarks/clubbing.webp',
+  cookingatapartment: '/images/landmarks/cookingatapartment.webp',
+  frenchrestaurant: '/images/landmarks/frenchrestaurant.webp',
+  seafoodrestaurant: '/images/landmarks/seafoodrestaurant.webp',
+  steakrestaurant: '/images/landmarks/steakrestaurant.webp',
+  movieatapartment: '/images/landmarks/movieatapartment.webp',
+
 }
 
 export function LandmarkBackground() {
