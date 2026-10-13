@@ -61,7 +61,13 @@ export function HeaderController({
           </button>
         </div>
       </div>
-      {children}
+      
+      {/* Wrapped in pointer-events-auto to ensure calendar buttons are fully clickable */}
+      {children && (
+        <div className="pointer-events-auto">
+          {children}
+        </div>
+      )}
     </header>
   )
 }

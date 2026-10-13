@@ -11,13 +11,6 @@ import { ItineraryCard } from '@/components/ItineraryCard'
 import { useItineraryStore } from '@/store/useItineraryStore'
 import { ItineraryModal } from './itinerary-modal'
 
-/**
- * ItineraryOverlay owns the live trip clock and the insider field-journal layout.
- *
- * It resolves the active itinerary item from the current UK time, updates the
- * active schedule card, and coordinates the background with the live current
- * activity or the brief tile override state.
- */
 export function ItineraryOverlay() {
   const setLocalTime = useItineraryStore((state) => state.setLocalTime)
   const setActiveScheduleItem = useItineraryStore((state) => state.setActiveScheduleItem)
@@ -31,9 +24,8 @@ export function ItineraryOverlay() {
   const localTime = useItineraryStore((state) => state.localTime)
 
   /**
-   * Finds the schedule item that matches the current UK time and updates the
-   * active state along with the background image. If the user wants to scroll to
-   * the current card, this helper will center it in view.
+   * Updates live time & background.
+   * Note: Only syncs `selectedDate` on initial load/manual jump, not during automatic ticks.
    */
   const jumpToCurrentActivity = useCallback((shouldScroll = true) => {
     const now = new Date()
@@ -44,32 +36,34 @@ export function ItineraryOverlay() {
     setActiveScheduleItem(current.id)
     setCurrentActivityLandmarkId(current.landmarkId)
     resetBackgroundToCurrent()
-    setSelectedDate(current.date)
 
+    // Only force-change the date on initial load or manual Jump to Current clicks!
     if (shouldScroll) {
+      setSelectedDate(current.date)
       window.requestAnimationFrame(() => {
         document.querySelector<HTMLElement>(`[data-itinerary-id="${current.id}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'center' })
       })
     }
   }, [resetBackgroundToCurrent, setActiveScheduleItem, setCurrentActivityLandmarkId, setLocalTime, setSelectedDate])
 
-  /**
-   * Refresh the current activity on mount and then every 60 seconds to keep the
-   * live tracker aligned with time changes.
-   */
   useEffect(() => {
     jumpToCurrentActivity(true)
     const timer = window.setInterval(() => jumpToCurrentActivity(false), 60_000)
     return () => window.clearInterval(timer)
   }, [jumpToCurrentActivity])
 
+  // Extract all unique dates from itineraryDays
   const dayDates = itineraryDays.map((day) => day.date)
-  const selectedDay = itineraryDays.find((day) => day.date === selectedDate) ?? itineraryDays[0]
+
+  // Find selected day matching exact string (e.g. "2026-10-15")
+  const selectedDay = itineraryDays.find((day) => day.date === selectedDate) || itineraryDays[0]
+
   const clock = localTime ? getUKDateTime(new Date(localTime)).clock : '--:--'
 
   return (
     <div className="relative h-full w-full">
       <LandmarkBackground />
+      
       <HeaderController
         clock={clock}
         focusMode={focusMode}
@@ -77,7 +71,15 @@ export function ItineraryOverlay() {
         onToggleFocusMode={toggleFocusMode}
         onResetAppProgress={resetAppProgress}
       >
-        {!focusMode && <div className="mx-auto mt-4 flex w-full max-w-6xl justify-center px-4 sm:px-6"><CalendarPicker selectedDate={selectedDate} dates={dayDates} onSelectDate={setSelectedDate} /></div>}
+        {!focusMode && (
+          <div className="mx-auto mt-4 flex w-full max-w-6xl justify-center px-4 sm:px-6">
+            <CalendarPicker
+              selectedDate={selectedDate}
+              dates={dayDates}
+              onSelectDate={(date) => setSelectedDate(date)}
+            />
+          </div>
+        )}
       </HeaderController>
 
       <QuoteSplash />

@@ -20,7 +20,7 @@ import { useItineraryStore } from '@/store/useItineraryStore'
  * Background Control Rules:
  * - Clicking a card expands/collapses it AND sets backgroundMode to 'manual',
  *   instantly displaying this card's item.landmarkId background asset.
- * - Auto-reset: A 5-second timer returns the background back to 'current' mode
+ * - Auto-reset: A 10-second timer returns the background back to 'current' mode
  *   unless the user continues interacting.
  */
 export function ItineraryCard({ item, index }: { item: ItineraryItem; index: number }) {
@@ -74,10 +74,10 @@ export function ItineraryCard({ item, index }: { item: ItineraryItem; index: num
       window.clearTimeout(pinTimeoutRef.current)
     }
 
-    // After 5 seconds, drift back to live tracking mode
+    // After 10 seconds, drift back to live tracking mode
     pinTimeoutRef.current = window.setTimeout(() => {
       resetBackgroundToCurrent()
-    }, 5000)
+    }, 10000)
   }
 
   const onActionClick = (event: React.MouseEvent<HTMLElement>, callback?: () => void) => {
