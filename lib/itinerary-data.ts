@@ -81,6 +81,24 @@ export const getStudySpot = (id?: string | null) => studySpots.find((spot) => sp
  */
 export const getRestaurant = (id?: string) => restaurants.find((restaurant) => restaurant.id === id)
 
+/** Keep a study spot from being recommended on more than one itinerary card. */
+export const uniqueStudySpotsByItemId = (() => {
+  const usedSpotIds = new Set<string>()
+  const assignments = new Map<string, StudySpot>()
+
+  for (const item of itineraryItems) {
+    if (!item.nearestStudySpotId || usedSpotIds.has(item.nearestStudySpotId)) continue
+    const spot = getStudySpot(item.nearestStudySpotId)
+    if (!spot) continue
+    usedSpotIds.add(spot.id)
+    assignments.set(item.id, spot)
+  }
+
+  return assignments
+})()
+
+export const getStudySpotForItem = (item: Pick<ItineraryItem, 'id'>) => uniqueStudySpotsByItemId.get(item.id)
+
 const UK_TIME_ZONE = 'Europe/London'
 const ukDateTimeFormatter = new Intl.DateTimeFormat('en-GB', {
   timeZone: UK_TIME_ZONE,
@@ -141,6 +159,25 @@ export function getItemLocationUrl(item: Pick<ItineraryItem, 'id' | 'title' | 'a
     return 'https://www.google.com/maps/search/?api=1&query=M%26C%20Saatchi%2C%2036%20Golden%20Square%2C%20London%20W1F%209EE'
   }
 
+  if (title.includes('the grand brighton') || title.includes('grand hotel')) {
+    return 'https://www.google.com/maps/search/?api=1&query=The%20Grand%20Brighton%2C%2097-99%20Kings%20Road%2C%20Brighton'
+  }
+  if (title.includes('holiday inn')) {
+    return 'https://www.google.com/maps/search/?api=1&query=Holiday%20Inn%20Brighton%20Seafront'
+  }
+  if (title.includes('legends')) {
+    return 'https://www.google.com/maps/search/?api=1&query=Legends%20Hotel%20%26%20Bar%2C%2031-34%20Marine%20Parade%2C%20Brighton'
+  }
+  if (title.includes('british museum')) {
+    return 'https://www.google.com/maps/search/?api=1&query=The%20British%20Museum%2C%20Great%20Russell%20Street%2C%20London'
+  }
+  if (title.includes('natural history') || title.includes('v&a museum')) {
+    return 'https://www.google.com/maps/search/?api=1&query=Natural%20History%20Museum%20and%20Victoria%20and%20Albert%20Museum%2C%20London'
+  }
+  if (title.includes('national gallery')) {
+    return 'https://www.google.com/maps/search/?api=1&query=The%20National%20Gallery%2C%20Trafalgar%20Square%2C%20London'
+  }
+
   if (restaurant?.mapsUrl) return restaurant.mapsUrl
   if (studySpot?.mapsUrl) return studySpot.mapsUrl
   return null
@@ -154,7 +191,7 @@ export function getItemWebsiteUrl(item: Pick<ItineraryItem, 'id' | 'title' | 'ac
   if (title.includes('m&c') || title.includes('saatchi') || title.includes('golden square') || title.includes('heathrow') || title.includes('lhr')) {
     return getItemLocationUrl(item, studySpot, restaurant)
   }
-  return restaurant?.menuUrl || studySpot?.mapsUrl || null
+  return restaurant?.menuUrl || null
 }
 
 /**

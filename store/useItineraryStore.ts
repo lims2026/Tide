@@ -6,6 +6,7 @@ import type { Restaurant, StudySpot } from '@/lib/itinerary-data'
 const TRIP_START_DATE = '2026-10-14'
 const POEM_INDEX_KEY = 'larrys-tour-guide-poem-index'
 const SELECTED_DATE_KEY = 'larrys-tour-guide-selected-date'
+const WELCOME_SEEN_KEY = 'larrys_guide_welcome_seen'
 
 /**
  * Modal state for the itinerary info popovers.
@@ -72,8 +73,9 @@ function persistState(key: string, value: string) {
  */
 export function resetAppProgress() {
   if (typeof window !== 'undefined') {
-    window.localStorage.setItem(POEM_INDEX_KEY, '0')
-    window.localStorage.setItem(SELECTED_DATE_KEY, TRIP_START_DATE)
+    window.localStorage.removeItem(POEM_INDEX_KEY)
+    window.localStorage.removeItem(SELECTED_DATE_KEY)
+    window.localStorage.removeItem(WELCOME_SEEN_KEY)
   }
 }
 
@@ -124,12 +126,11 @@ export const useItineraryStore = create<ItineraryState>((set) => ({
     set({ poemIndex })
   },
   resetAppProgress: () => {
-    if (typeof window !== 'undefined') {
-      window.localStorage.setItem(POEM_INDEX_KEY, '0')
-      window.localStorage.setItem(SELECTED_DATE_KEY, TRIP_START_DATE)
-    }
+    resetAppProgress()
 
     set({
+      activeScheduleItemId: null,
+      currentLandmarkId: 'bigben',
       poemIndex: 0,
       selectedDate: TRIP_START_DATE,
       backgroundMode: 'current',
@@ -138,6 +139,8 @@ export const useItineraryStore = create<ItineraryState>((set) => ({
       showSplash: true,
       excitementChoice: null,
       focusMode: false,
+      activeModal: { type: 'none', data: null },
+      localTime: Date.now(),
     })
   },
   openStudyModal: (data) => set({ activeModal: { type: 'study', data } }),

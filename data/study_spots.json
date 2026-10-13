@@ -34,5 +34,96 @@
       "Wi-Fi"
     ],
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20British%20Museum%20Great%20Russell%20Street%2C%20London%20WC1B%203DG"
+  },
+  {
+    "id": "soderberg-soho",
+    "name": "Söderberg Soho",
+    "distance": "0.3 km",
+    "address": "36 Berwick Street, London W1F 8RR",
+    "amenities": [
+      "Wi-Fi",
+      "Dedicated power outlets",
+      "Swedish Bakery & Coffee",
+      "Laptop friendly"
+    ],
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Soderberg%2036%20Berwick%20Street%20London%20W1F%208RR"
+  },
+  {
+    "id": "nessa-soho",
+    "name": "Nessa Lounge & Bar",
+    "distance": "0.4 km",
+    "address": "86 Brewer Street, London W1F 9UB",
+    "amenities": [
+      "Wi-Fi",
+      "Cosy Lounge Vibe",
+      "Power Sockets",
+      "Coffee & Cocktails"
+    ],
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nessa%2086%20Brewer%20Street%20London%20W1F%209UB"
+  },
+  {
+    "id": "watchhouse-somerset-house",
+    "name": "WatchHouse Somerset House",
+    "distance": "0.1 km",
+    "address": "East Wing, Somerset House, Strand, London WC2R 1LA",
+    "amenities": [
+      "Wi-Fi",
+      "Specialty Coffee",
+      "Courtyard Views",
+      "Laptop friendly"
+    ],
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=WatchHouse%20Somerset%20House%20Strand%20London%20WC2R%201LA"
+  },
+  {
+    "id": "v-and-a-gamble-room",
+    "name": "V&A South Kensington Cafe (Gamble Room)",
+    "distance": "0.2 km",
+    "address": "Cromwell Road, London SW7 2RL",
+    "amenities": [
+      "Wi-Fi",
+      "Spacious Historic Seating",
+      "Coffee & Pastries",
+      "Power Outlets"
+    ],
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=V%26A%20Museum%20Cromwell%20Road%20London%20SW7%202RL"
+  },
+  {
+    "id": "notes-south-kensington",
+    "name": "Notes Coffee Roasters South Kensington",
+    "distance": "0.3 km",
+    "address": "31 Exhibition Road, London SW7 2DD",
+    "amenities": [
+      "Wi-Fi",
+      "Specialty Coffee",
+      "Power Sockets",
+      "Laptop friendly"
+    ],
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Notes%20Coffee%2031%20Exhibition%20Road%20London%20SW7%202DD"
+  },
+  {
+    "id": "hr-higgins-mayfair",
+    "name": "H.R. Higgins Coffee Lounge",
+    "distance": "0.3 km",
+    "address": "79 Duke Street, London W1K 5OU",
+    "amenities": [
+      "Wi-Fi",
+      "Specialty Coffee Lounge",
+      "Power Outlets",
+      "Quiet Atmosphere"
+    ],
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=HR%20Higgins%2079%20Duke%20Street%20London%20W1K%205OU"
+  },
+  {
+    "id": "swans-bar-maison-assouline",
+    "name": "The Swans Bar at Maison Assouline",
+    "distance": "0.4 km",
+    "address": "196A Piccadilly, London W1J 9EY",
+    "amenities": [
+      "Wi-Fi",
+      "Hotel/Lounge Vibe",
+      "Coffee & Bar Menu",
+      "Power Outlets"
+    ],
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Maison%20Assouline%20196A%20Piccadilly%20London%20W1J%209EY"
   }
 ]

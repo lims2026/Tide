@@ -69,8 +69,7 @@
       "startTime": "11:00",
       "title": "Checking Into The Grand Brighton",
       "activity": "Arriving by the coast and dropping bags off at our stunning hotel.",
-      "landmarkId": "thegrandbrighton.webp",
-      "restaurantId": "restaurant-2"
+      "landmarkId": "thegrandbrighton.webp"
     },
     {
       "id": "2026-10-15-1300-07",
@@ -101,8 +100,7 @@
       "startTime": "16:00",
       "title": "Hotel Rest & Refresh",
       "activity": "Heading back to the grand hotel to unwind and recharge.",
-      "landmarkId": "thegrandbrighton.webp",
-      "restaurantId": "restaurant-2"
+      "landmarkId": "thegrandbrighton.webp"
     },
     {
       "id": "2026-10-15-1830-10",
@@ -143,8 +141,7 @@
       "startTime": "23:30",
       "title": "Bar Hopping in Kemptown",
       "activity": "Exploring lively local gay bars and pubs late into the night.",
-      "landmarkId": "clubbing.webp",
-      "restaurantId": "restaurant-extra-charles"
+      "landmarkId": "clubbing.webp"
     },
     {
       "id": "2026-10-16-1000-14",
@@ -195,8 +192,7 @@
       "startTime": "16:00",
       "title": "Moving to the Holiday Inn",
       "activity": "Checking into our new seafront hotel and getting settled.",
-      "landmarkId": "holidayinn.webp",
-      "restaurantId": "restaurant-2"
+      "landmarkId": "holidayinn.webp"
     },
     {
       "id": "2026-10-16-1800-19",
@@ -228,8 +224,7 @@
       "startTime": "21:30",
       "title": "Heading to Legends",
       "activity": "Arriving at Legends Bar for an unforgettable night out.",
-      "landmarkId": "clubbing.webp",
-      "restaurantId": "restaurant-extra-legends"
+      "landmarkId": "clubbing.webp"
     },
     {
       "id": "2026-10-16-2200-22",
@@ -239,8 +234,7 @@
       "startTime": "22:00",
       "title": "Friday Night Drag Extravaganza",
       "activity": "Cheering loud as the headline Friday night drag show kicks off.",
-      "landmarkId": "clubbing.webp",
-      "restaurantId": "restaurant-extra-legends"
+      "landmarkId": "clubbing.webp"
     },
     {
       "id": "2026-10-16-2330-23",
@@ -250,8 +244,7 @@
       "startTime": "23:30",
       "title": "Basement Club Dancing",
       "activity": "Hitting the basement dancefloor to party late into the night.",
-      "landmarkId": "clubbing.webp",
-      "restaurantId": "restaurant-extra-legends"
+      "landmarkId": "clubbing.webp"
     },
     {
       "id": "2026-10-17-1100-24",
@@ -447,8 +440,7 @@
       "title": "Bao Lunch in Soho",
       "activity": "Meeting up for incredible Taiwanese steamed buns in the heart of Soho.",
       "landmarkId": "frenchrestaurant.webp",
-      "restaurantId": "restaurant-9",
-      "nearestStudySpotId": "foyles"
+      "restaurantId": "restaurant-9"
     },
     {
       "id": "2026-10-20-1330-43",
@@ -469,8 +461,7 @@
       "title": "Melting Hot Chocolate",
       "activity": "Treating ourselves to rich, decadent hot chocolate in Soho.",
       "landmarkId": "cafe.webp",
-      "restaurantId": "restaurant-10",
-      "nearestStudySpotId": "foyles"
+      "restaurantId": "restaurant-10"
     },
     {
       "id": "2026-10-20-1730-45",
@@ -531,20 +522,18 @@
       "startTime": "08:00",
       "title": "South Bank Landmark Walk",
       "activity": "Taking in iconic views along the Thames past the London Eye and Big Ben.",
-      "landmarkId": "bigben.webp",
-      "nearestStudySpotId": "bfi-southbank"
+      "landmarkId": "bigben.webp"
     },
     {
       "id": "2026-10-21-1200-51",
       "date": "2026-10-21",
-      "dayTitle": "Touristy Walk, Pies and Dance/Drag",
-      "time": "12:00 PM (Sharp)",
-      "startTime": "12:00",
-      "title": "Legendary Pie Lunch",
-      "activity": "Indulging in exquisite savory pies at the gorgeous Holborn Dining Room.",
+      "dayTitle": "Touristy Walk, Dishoom and Dance/Drag",
+      "time": "12:15 PM (Sharp)",
+      "startTime": "12:15",
+      "title": "Lunch at Dishoom Carnaby",
+      "activity": "Lunch at Dishoom Carnaby, 22 Kingly St, Carnaby, London W1B 5QP. 12:15 sharp.",
       "landmarkId": "britishrestaurantpub.webp",
-      "restaurantId": "restaurant-12",
-      "nearestStudySpotId": "foyles"
+      "restaurantId": "restaurant-12"
     },
     {
       "id": "2026-10-21-1330-52",
@@ -554,8 +543,7 @@
       "startTime": "13:30",
       "title": "Art at Somerset House",
       "activity": "Admiring stunning artistic masterpieces at the Courtauld Gallery.",
-      "landmarkId": "britishmuseum.webp",
-      "nearestStudySpotId": "bfi-southbank"
+      "landmarkId": "britishmuseum.webp"
     },
     {
       "id": "2026-10-21-1700-53",
@@ -617,8 +605,7 @@
       "title": "Berwick Street Market Lunch",
       "activity": "Sampling delicious global street food stalls in lively Soho.",
       "landmarkId": "cafe.webp",
-      "restaurantId": "restaurant-15",
-      "nearestStudySpotId": "foyles"
+      "restaurantId": "restaurant-15"
     },
     {
       "id": "2026-10-22-1330-59",
@@ -860,8 +847,7 @@
       "startTime": "13:00",
       "title": "Luxury Window Shopping",
       "activity": "Admiring the stunning window displays at Harrods in Knightsbridge.",
-      "landmarkId": "clothshopping.webp",
-      "restaurantId": "restaurant-18"
+      "landmarkId": "clothshopping.webp"
     },
     {
       "id": "2026-10-25-1330-74",

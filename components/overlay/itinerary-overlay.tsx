@@ -3,6 +3,7 @@
 import { useCallback, useEffect } from 'react'
 import { CalendarPicker } from '@/components/overlay/CalendarPicker'
 import { QuoteSplash } from '@/components/overlay/QuoteSplash'
+import { AudioFeedback } from '@/components/AudioFeedback'
 import { itineraryDays, itineraryItems } from '@/lib/itinerary-data'
 import { getActiveScheduleItem, getUKDateTime } from '@/lib/timeUtils'
 import { HeaderController } from '@/components/HeaderController'
@@ -20,7 +21,6 @@ export function ItineraryOverlay() {
   const selectedDate = useItineraryStore((state) => state.selectedDate)
   const focusMode = useItineraryStore((state) => state.focusMode)
   const toggleFocusMode = useItineraryStore((state) => state.toggleFocusMode)
-  const resetAppProgress = useItineraryStore((state) => state.resetAppProgress)
   const localTime = useItineraryStore((state) => state.localTime)
 
   /**
@@ -63,13 +63,13 @@ export function ItineraryOverlay() {
   return (
     <div className="relative h-full w-full">
       <LandmarkBackground />
+      <AudioFeedback />
       
       <HeaderController
         clock={clock}
         focusMode={focusMode}
         onJumpToCurrentActivity={() => jumpToCurrentActivity(true)}
         onToggleFocusMode={toggleFocusMode}
-        onResetAppProgress={resetAppProgress}
       >
         {!focusMode && (
           <div className="mx-auto mt-4 flex w-full max-w-6xl justify-center px-4 sm:px-6">

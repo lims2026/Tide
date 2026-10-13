@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useMemo, useState } from 'react'
 import quotesJson from '@/data/quotes.json'
 import { useItineraryStore } from '@/store/useItineraryStore'
+import { playExcitedSound, playPoemSound } from '@/lib/sounds'
 
 const QUOTES = quotesJson as Array<{ id: number; poem: string }>
 const WELCOME_SEEN_KEY = 'larrys_guide_welcome_seen'
@@ -29,6 +30,10 @@ export function QuoteSplash() {
 
   /** Determine initial card step based on first-time visit history */
   useEffect(() => {
+    if (!showSplash) {
+      return
+    }
+
     if (typeof window !== 'undefined') {
       const hasSeenWelcome = localStorage.getItem(WELCOME_SEEN_KEY)
       if (!hasSeenWelcome) {
@@ -41,6 +46,7 @@ export function QuoteSplash() {
 
   /** Card 1 -> Card 2 */
   const handleSelectChoice = (choice: 'see-me' | 'super') => {
+    playExcitedSound()
     setSelectedChoice(choice)
     setExcitementChoice(choice)
     setStep(2)
@@ -56,6 +62,7 @@ export function QuoteSplash() {
 
   /** Card 3 -> Close Splash & Advance Poetry Counter for Next Load */
   const handleFinishSplash = () => {
+    playPoemSound()
     setPoemIndex((poemIndex + 1) % QUOTES.length)
     setShowSplash(false)
   }
@@ -71,7 +78,7 @@ export function QuoteSplash() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 z-50 flex items-center justify-center bg-[#f9dfe8]/85 p-4 backdrop-blur-md"
+        className="fixed inset-0 z-[70] flex items-center justify-center bg-[#f9dfe8]/85 p-4 backdrop-blur-md"
       >
         {/* CARD 1: FIRST VISIT WELCOME & CHOICE */}
         {step === 1 && (
@@ -94,6 +101,7 @@ export function QuoteSplash() {
             <div className="mt-6 flex flex-col gap-3">
               <button
                 type="button"
+                data-sfx="custom"
                 onClick={() => handleSelectChoice('see-me')}
                 className={`group flex items-center justify-between rounded-2xl border p-4 text-left transition-all ${
                   selectedChoice === 'see-me'
@@ -109,6 +117,7 @@ export function QuoteSplash() {
 
               <button
                 type="button"
+                data-sfx="custom"
                 onClick={() => handleSelectChoice('super')}
                 className={`group flex items-center justify-between rounded-2xl border p-4 text-left transition-all ${
                   selectedChoice === 'super'

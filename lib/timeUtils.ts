@@ -58,21 +58,34 @@ export function parseScheduleMinutes(startTime: string) {
 /**
  * Returns the item whose start time is most recent at the current moment.
  *
- * If no item has started yet for the day, the function falls back to the first
- * item of that date. If there are no items for the current UK date, it returns
- * the next upcoming item or the final item in the itinerary.
+ * Before the itinerary starts, or before a day's first scheduled stop, the
+ * airport arrival card is the current activity. After the final day, departure
+ * remains current. Between scheduled starts, the most recently started item
+ * stays active until the next item's start time.
  */
 export function getActiveScheduleItem(date: Date, itineraryItems: ItineraryItem[]) {
   const { date: today, minutes: minutesNow } = getUKDateTime(date)
-  const todaysItems = itineraryItems.filter((item) => item.date === today)
+  const sortedItems = [...itineraryItems].sort((left, right) =>
+    left.date.localeCompare(right.date) || parseScheduleMinutes(left.startTime) - parseScheduleMinutes(right.startTime),
+  )
+  if (sortedItems.length === 0) return undefined
+
+  const airportItem = sortedItems.find((item) => item.landmarkId.toLowerCase().includes('airport') && !item.landmarkId.toLowerCase().includes('departure'))
+  const departureItem = sortedItems.find((item) =>
+    item.landmarkId.toLowerCase().includes('departure') || /\b(departure|heading home)\b/i.test(item.title),
+  )
+  const todaysItems = sortedItems.filter((item) => item.date === today)
 
   if (todaysItems.length) {
     const active = todaysItems
       .filter((item) => parseScheduleMinutes(item.startTime) <= minutesNow)
       .at(-1)
 
-    return active ?? todaysItems[0]
+    return active ?? airportItem ?? todaysItems[0]
   }
 
-  return itineraryItems.find((item) => item.date > today) ?? itineraryItems.at(-1)
+  if (today < sortedItems[0]?.date) return airportItem ?? sortedItems[0]
+  const finalItem = sortedItems.at(-1)!
+  if (today > finalItem.date) return departureItem ?? finalItem
+  return sortedItems.find((item) => item.date > today) ?? airportItem ?? sortedItems[0]
 }
