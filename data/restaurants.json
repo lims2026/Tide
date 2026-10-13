@@ -162,6 +162,16 @@
       "address": "Canal-side, Cowley/Uxbridge"
     },
     {
+      "name": "The Blues Kitchen Shoreditch",
+      "meal": "lunch",
+      "day": "Sat 24 Oct",
+      "note": "",
+      "id": "restaurant-20",
+      "menuUrl": "https://theblueskitchen.com/shoreditch/wp-content/uploads/sites/5/2026/09/BRUNCH_BKS-1.pdf",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Blues+Kitchen+134-146+Curtain+Rd+Shoreditch+London+EC2A+3AR",
+      "address": "134-146 Curtain Rd, Shoreditch, London EC2A 3AR"
+    },
+    {
       "name": "Hard Rock Cafe, ",
       "meal": "lunch",
       "day": "Sun 25 Oct",
@@ -179,16 +189,6 @@
       "menuUrl": "https://gelupo.slerp.com/order/store/gelupo-soho?_gl=1*4vjkaz*_ga*MTg3NTg0MDkzNC4xNzA4NDQ3NjI2*_ga_HDNMMD6LCD*MTcxNDY2NzMyMC41NC4xLjE3MTQ2NjczNDMuMC4wLjA.",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gelupo+7+Archer+St+Soho+London+W1D+7NTO",
       "address": "7 Archer St, Soho, London W1D 7NTO"
-    },
-    {
-      "name": "The Blues Kitchen Shoreditch",
-      "meal": "lunch",
-      "day": "Sat 24 Oct",
-      "note": "",
-      "id": "restaurant-20",
-      "menuUrl": "https://theblueskitchen.com/shoreditch/wp-content/uploads/sites/5/2026/09/BRUNCH_BKS-1.pdf",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Blues+Kitchen+134-146+Curtain+Rd+Shoreditch+London+EC2A+3AR",
-      "address": "134-146 Curtain Rd, Shoreditch, London EC2A 3AR"
     },
     {
       "name": "The WatersEdge",
