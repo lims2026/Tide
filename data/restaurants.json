@@ -81,6 +81,16 @@
       "address": "Uxbridge"
     },
     {
+      "name": "Maya Pub, South Harrow",
+      "meal": "Dinner",
+      "day": "Mon 19 Oct",
+      "note": "",
+      "id": "restaurant-100",
+      "menuUrl": "https://newache.co.uk/menu/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Maya+Pub+South+Harrow",
+      "address": "South Harrow"
+    },
+    {
       "name": "Bao Soho",
       "meal": "lunch",
       "day": "Tue 20 Oct",
@@ -99,6 +109,16 @@
       "menuUrl": "https://italianbearchocolate.com/menu/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Italian+Bear+Chocolate+41+Broadwick+St+Soho+London",
       "address": "41 Broadwick St, Soho, London W1F 9QL"
+    },
+        {
+      "name": "Jiak Malaysian Street Food",
+      "meal": "dinner",
+      "day": "Tue 20 Oct",
+      "note": "Dinner with HK Friends",
+      "id": "restaurant-101",
+      "menuUrl": "https://jiakmalaysianstreetfood.com/menu/",
+      "mapsUrl": "https://www.google.com/maps/place/Jiak+吃+Malaysian+Street+Food/@51.5217952,-0.0924123,17z/data=!3m1!5s0x48761ca9a3336465:0xb9e2dff3a7498c47!4m7!3m6!1s0x48761dfda9fb14ed:0x96efebe60148fbaf!8m2!3d51.5217952!4d-0.0924123!10e9!16s%2Fg%2F11lz3pj3y8?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D",
+      "address": "2c Whitecross St, London EC1Y 8NX"
     },
     {
       "name": "Dishoom Carnaby",

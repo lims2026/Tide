@@ -20,6 +20,8 @@ export type ItineraryItem = {
   title: string
   activity: string
   landmarkId: string
+  address?: string
+  mapsUrl?: string
   nearestStudySpotId?: string
   restaurantId?: string
 }
@@ -148,7 +150,9 @@ function parseScheduleMinutes(startTime: string) {
 /**
  * Builds the correct map link for each itinerary item with fallbacks for study and restaurant data.
  */
-export function getItemLocationUrl(item: Pick<ItineraryItem, 'id' | 'title' | 'activity'>, studySpot?: StudySpot | null, restaurant?: Restaurant | null) {
+export function getItemLocationUrl(item: Pick<ItineraryItem, 'id' | 'title' | 'activity'> & Partial<Pick<ItineraryItem, 'mapsUrl'>>, studySpot?: StudySpot | null, restaurant?: Restaurant | null) {
+  if (item.mapsUrl) return item.mapsUrl
+
   const title = `${item.title} ${item.activity}`.toLowerCase()
 
   if (title.includes('heathrow') || title.includes('lhr')) {

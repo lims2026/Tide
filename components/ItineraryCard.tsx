@@ -1,14 +1,13 @@
 'use client'
 
 import { AnimatePresence, motion } from 'framer-motion'
-import { BookOpen, ChevronDown, ExternalLink, MapPin, ScrollText } from 'lucide-react'
+import { BookOpen, ChevronDown, ExternalLink, MapPin } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import {
   getItemDisplayTitle,
   getItemLocationUrl,
   getItemSummary,
-  getItemWebsiteUrl,
   getRestaurant,
   getStudySpotForItem,
   type ItineraryItem,
@@ -40,7 +39,6 @@ export function ItineraryCard({ item, index }: { item: ItineraryItem; index: num
   const studySpot = getStudySpotForItem(item)
   const restaurant = getRestaurant(item.restaurantId)
   const locationUrl = getItemLocationUrl(item, studySpot, restaurant)
-  const websiteUrl = getItemWebsiteUrl(item, studySpot, restaurant)
   const summary = getItemSummary(item)
   const title = getItemDisplayTitle(item)
   const isDeparture = item.landmarkId.toLowerCase().includes('departure') || /\b(departure|heading home)\b/i.test(item.title)
@@ -138,6 +136,12 @@ export function ItineraryCard({ item, index }: { item: ItineraryItem; index: num
             {title}
           </h2>
           <p className="mt-1 text-[0.65rem] uppercase tracking-[0.22em] text-slate-600">{dateLabel}</p>
+          {item.address && (
+            <p className="mt-2 flex items-start gap-1.5 text-xs leading-relaxed text-slate-700">
+              <MapPin className="mt-0.5 size-3.5 shrink-0" aria-hidden="true" />
+              <span>{item.address}</span>
+            </p>
+          )}
         </div>
 
         <button
@@ -177,19 +181,6 @@ export function ItineraryCard({ item, index }: { item: ItineraryItem; index: num
           >
             <MapPin className="size-3.5" aria-hidden="true" />
             Map
-          </a>
-        )}
-
-        {websiteUrl && !restaurant && (
-          <a
-            href={websiteUrl}
-            target="_blank"
-            rel="noreferrer"
-            onClick={(event) => event.stopPropagation()}
-            className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-2.5 py-1.5 text-[0.64rem] font-semibold uppercase tracking-[0.14em] text-slate-800 transition hover:bg-slate-100"
-          >
-            <ScrollText className="size-3.5" aria-hidden="true" />
-            Website
           </a>
         )}
 

@@ -90,7 +90,8 @@
       "startTime": "15:00",
       "title": "Brighton Palace Pier Stroll",
       "activity": "Walking along the iconic pier for sea breeze and arcade fun.",
-      "landmarkId": "brightonpier.webp"
+      "landmarkId": "brightonpier.webp",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Brighton+Palace+Pier%2C+Madeira+Drive%2C+Brighton+BN2+1TW"
     },
     {
       "id": "2026-10-15-1600-09",
@@ -192,7 +193,9 @@
       "startTime": "16:00",
       "title": "Moving to the Holiday Inn",
       "activity": "Checking into our new seafront hotel and getting settled.",
-      "landmarkId": "holidayinn.webp"
+      "landmarkId": "holidayinn.webp",
+      "address": "137 Kings Road, Brighton BN1 2JF",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Holiday+Inn+Brighton+-+Seafront%2C+137+Kings+Road%2C+Brighton+BN1+2JF"
     },
     {
       "id": "2026-10-16-1800-19",
@@ -297,7 +300,8 @@
       "startTime": "16:00",
       "title": "Royal Pavilion Gardens",
       "activity": "Strolling through the gorgeous grounds of the iconic Royal Pavilion.",
-      "landmarkId": "brightonpavilion.webp"
+      "landmarkId": "brightonpavilion.webp",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Royal+Pavilion+Gardens%2C+4%2F5+Pavilion+Buildings%2C+Brighton+BN1+1EE"
     },
     {
       "id": "2026-10-17-1700-29",
@@ -307,7 +311,9 @@
       "startTime": "17:00",
       "title": "Collecting Luggage",
       "activity": "Heading back to the Holiday Inn to pick up our suitcases.",
-      "landmarkId": "holidayinn.webp"
+      "landmarkId": "holidayinn.webp",
+      "address": "137 Kings Road, Brighton BN1 2JF",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Holiday+Inn+Brighton+-+Seafront%2C+137+Kings+Road%2C+Brighton+BN1+2JF"
     },
     {
       "id": "2026-10-17-1800-30",
@@ -378,7 +384,8 @@
       "startTime": "11:00",
       "title": "Canal-Side Tea Walk",
       "activity": "Taking a peaceful stroll alongside the scenic Grand Union Canal.",
-      "landmarkId": "canal.webp"
+      "landmarkId": "canal.webp",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Grand+Union+Canal%2C+Cowley%2C+Uxbridge+UB8+2JE"
     },
     {
       "id": "2026-10-19-1400-37",
@@ -406,9 +413,10 @@
       "dayTitle": "Bhabs Work From Home Day",
       "time": "7:00 PM",
       "startTime": "19:00",
-      "title": "Dinner with Friends",
-      "activity": "Sharing great food and laughs over dinner with Sese and Shabina.",
-      "landmarkId": "bigben.webp"
+      "title": "Dinner at Maya Pub",
+      "activity": "Nepali food with Sese and Shabina.",
+      "landmarkId": "britishrestaurantpub.webp",
+      "restaurantId": "restaurant-100"
     },
     {
       "id": "2026-10-20-0600-40",
@@ -449,8 +457,9 @@
       "time": "1:30 PM",
       "startTime": "13:30",
       "title": "Covent Garden Stroll",
-      "activity": "Exploring the lively market stalls and colorful hidden courtyards.",
-      "landmarkId": "clothshopping.webp"
+      "activity": "Exploring the market stalls and colorful courtyards.",
+      "landmarkId": "clothshopping.webp",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Covent+Garden+Market%2C+London+WC2E+8RF"
     },
     {
       "id": "2026-10-20-1600-44",
@@ -459,7 +468,7 @@
       "time": "4:00 PM",
       "startTime": "16:00",
       "title": "Melting Hot Chocolate",
-      "activity": "Treating ourselves to rich, decadent hot chocolate in Soho.",
+      "activity": "Cute hot chocolate in Soho.",
       "landmarkId": "cafe.webp",
       "restaurantId": "restaurant-10"
     },
@@ -480,7 +489,7 @@
       "time": "6:00 PM",
       "startTime": "18:00",
       "title": "Window Shopping",
-      "activity": "Browsing contemporary styles along Regent Street and Covent Garden.",
+      "activity": "Exploring old bond street and the Royal Arcade.",
       "landmarkId": "clothshopping.webp"
     },
     {
@@ -489,10 +498,10 @@
       "dayTitle": "Exploring Soho & Central London",
       "time": "7:30 PM",
       "startTime": "19:30",
-      "title": "Dinner with Friends",
-      "activity": "Enjoying vibrant flavors and great company at a bustling Soho hotspot.",
+      "title": "Dinner with HK Friends",
+      "activity": "",
       "landmarkId": "frenchrestaurant.webp",
-      "restaurantId": "restaurant-extra-kiln"
+      "restaurantId": "restaurant-101"
     },
     {
       "id": "2026-10-20-2130-48",
@@ -507,7 +516,7 @@
     {
       "id": "2026-10-21-0700-49",
       "date": "2026-10-21",
-      "dayTitle": "Touristy Walk, Pies and Dance/Drag",
+      "dayTitle": "Touristy Walk, Dishoom and Dance/Drag",
       "time": "7:00 AM",
       "startTime": "07:00",
       "title": "Morning Breakfast",
@@ -517,12 +526,13 @@
     {
       "id": "2026-10-21-0800-50",
       "date": "2026-10-21",
-      "dayTitle": "Touristy Walk, Pies and Dance/Drag",
+      "dayTitle": "Touristy Walk, Dishoom and Dance/Drag",
       "time": "8:00 AM",
       "startTime": "08:00",
       "title": "South Bank Landmark Walk",
       "activity": "Taking in iconic views along the Thames past the London Eye and Big Ben.",
-      "landmarkId": "bigben.webp"
+      "landmarkId": "bigben.webp",
+      "mapsUrl": "https://www.google.com/maps/dir/?api=1&origin=London+Eye%2C+London&destination=Big+Ben%2C+London"
     },
     {
       "id": "2026-10-21-1200-51",
@@ -538,7 +548,7 @@
     {
       "id": "2026-10-21-1330-52",
       "date": "2026-10-21",
-      "dayTitle": "Touristy Walk, Pies and Dance/Drag",
+      "dayTitle": "Touristy Walk, Dishoom and Dance/Drag",
       "time": "1:30 PM",
       "startTime": "13:30",
       "title": "Art at Somerset House",
@@ -548,7 +558,7 @@
     {
       "id": "2026-10-21-1700-53",
       "date": "2026-10-21",
-      "dayTitle": "Touristy Walk, Pies and Dance/Drag",
+      "dayTitle": "Touristy Walk, Dishoom and Dance/Drag",
       "time": "5:00 PM",
       "startTime": "17:00",
       "title": "Evening Meetup",
@@ -558,7 +568,7 @@
     {
       "id": "2026-10-21-1815-54",
       "date": "2026-10-21",
-      "dayTitle": "Touristy Walk, Pies and Dance/Drag",
+      "dayTitle": "Touristy Walk, Dishoom and Dance/Drag",
       "time": "6:15 PM",
       "startTime": "18:15",
       "title": "Dance Class or Soho Drag",
@@ -568,7 +578,7 @@
     {
       "id": "2026-10-21-2200-55",
       "date": "2026-10-21",
-      "dayTitle": "Touristy Walk, Pies and Dance/Drag",
+      "dayTitle": "Touristy Walk, Dishoom and Dance/Drag",
       "time": "10:00 PM",
       "startTime": "22:00",
       "title": "Return to Apartment",
@@ -636,7 +646,8 @@
       "startTime": "18:00",
       "title": "Strolling Through Mayfair",
       "activity": "Window shopping along luxury Bond Street and historic Burlington Arcade.",
-      "landmarkId": "clothshopping.webp"
+      "landmarkId": "clothshopping.webp",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Burlington+Arcade%2C+Mayfair%2C+London+W1J+0QJ"
     },
     {
       "id": "2026-10-22-2000-62",
@@ -707,7 +718,8 @@
       "startTime": "17:00",
       "title": "Local Area Walk",
       "activity": "Exploring the neighborhood nooks around Uxbridge and Cowley.",
-      "landmarkId": "apartment.webp"
+      "landmarkId": "apartment.webp",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cowley%2C+Uxbridge%2C+London+UB8"
     },
     {
       "id": "2026-10-23-1930-69",
@@ -797,7 +809,8 @@
       "startTime": "18:30",
       "title": "Tower Bridge Walk",
       "activity": "Crossing the iconic landmark as evening sets in over the Thames.",
-      "landmarkId": "bigben.webp"
+      "landmarkId": "bigben.webp",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tower+Bridge%2C+London+SE1+2UP"
     },
     {
       "id": "2026-10-24-1900-89",
@@ -867,7 +880,8 @@
       "startTime": "14:30",
       "title": "Cycling to Buckingham Palace",
       "activity": "Taking a scenic bike ride down to the royal residence.",
-      "landmarkId": "bigben.webp"
+      "landmarkId": "bigben.webp",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Buckingham+Palace%2C+London+SW1A+1AA"
     },
     {
       "id": "2026-10-25-1600-76",
@@ -877,7 +891,8 @@
       "startTime": "16:00",
       "title": "Regent Street Stroll",
       "activity": "Window shopping along bustling Regent Street.",
-      "landmarkId": "clothshopping.webp"
+      "landmarkId": "clothshopping.webp",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Regent+Street%2C+London+W1B"
     },
     {
       "id": "2026-10-25-1830-77",
@@ -887,7 +902,8 @@
       "startTime": "18:30",
       "title": "Barbican Conservatory Views",
       "activity": "Discovering the incredible indoor tropical oasis and highwalks.",
-      "landmarkId": "bigben.webp"
+      "landmarkId": "bigben.webp",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Barbican+Conservatory%2C+Silk+Street%2C+London+EC2Y+8DS"
     },
     {
       "id": "2026-10-25-1930-78",
@@ -968,7 +984,8 @@
       "startTime": "12:00",
       "title": "Peaceful Canal Walk",
       "activity": "Taking a quiet, romantic stroll along the canal.",
-      "landmarkId": "canal.webp"
+      "landmarkId": "canal.webp",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Grand+Union+Canal%2C+Uxbridge"
     },
     {
       "id": "2026-10-26-1400-95",
@@ -1018,7 +1035,8 @@
       "startTime": "09:00",
       "title": "Final Canal Walk",
       "activity": "Taking one last peaceful walk along the waterside.",
-      "landmarkId": "canal.webp"
+      "landmarkId": "canal.webp",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Grand+Union+Canal%2C+Uxbridge"
     },
     {
       "id": "2026-10-27-1200-100",
