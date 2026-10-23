@@ -725,11 +725,11 @@
       "id": "2026-10-23-1930-69",
       "date": "2026-10-23",
       "dayTitle": "Bhabs Work From Home Day",
-      "time": "7:30 PM",
-      "startTime": "19:30",
-      "title": "Cozy Dinner In",
-      "activity": "Relaxing over a peaceful dinner at home.",
-      "landmarkId": "movieatapartment.webp"
+      "time": "6:30 PM",
+      "startTime": "18:30",
+      "title": "Dashain at Miju's",
+      "activity": "Meeting up with Bhab's family and celebrating Dashain.",
+      "landmarkId": "apartment.webp"
     },
     {
       "id": "2026-10-24-2300-81",
@@ -737,9 +737,9 @@
       "dayTitle": "Double Date and a Gay Evening",
       "time": "11:00 PM – Late",
       "startTime": "23:00",
-      "title": "Epic Club Night",
-      "activity": "Bar hopping and dancing the night away at legendary London clubs.",
-      "landmarkId": "clubbing.webp"
+      "title": "Cozy Night In",
+      "activity": "Resting after a long day of meeting Bhabs' family.",
+      "landmarkId": "movieatapartment.webp"
     },
     {
       "id": "2026-10-24-1000-82",
@@ -748,38 +748,28 @@
       "time": "10:00 AM",
       "startTime": "10:00",
       "title": "Morning Breakfast",
-      "activity": "Enjoying a relaxed morning breakfast with Amir and Barina.",
+      "activity": "Enjoying a relaxed morning breakfast with Barina.",
       "landmarkId": "cookingatapartment.webp"
     },
     {
       "id": "2026-10-24-1130-83",
       "date": "2026-10-24",
       "dayTitle": "Double Date and a Gay Evening",
-      "time": "11:30 AM",
-      "startTime": "11:30",
-      "title": "Camden Market Adventure",
-      "activity": "Exploring Camden Market stalls and canalside vibes with Mia and Reece.",
-      "landmarkId": "clothshopping.webp"
+      "time": "12:30 AM",
+      "startTime": "12:30",
+      "title": "Ballroom & Latin Dance Class",
+      "activity": "Watching Bhabs learn ballroom and latin dance moves, and imagine how amazing it would be to dance with him.",
+      "landmarkId": "icl.webp"
     },
     {
       "id": "2026-10-24-1330-84",
       "date": "2026-10-24",
       "dayTitle": "Double Date and a Gay Evening",
-      "time": "1:30 PM",
-      "startTime": "13:30",
+      "time": "3:00 PM",
+      "startTime": "15:00",
       "title": "Brick Lane Exploration",
       "activity": "Wandering through the vibrant street art and culture of Shoreditch.",
       "landmarkId": "clothshopping.webp"
-    },
-    {
-      "id": "2026-10-24-1430-85",
-      "date": "2026-10-24",
-      "dayTitle": "Double Date and a Gay Evening",
-      "time": "2:30 PM",
-      "startTime": "14:30",
-      "title": "Blues Kitchen Lunch",
-      "activity": "Enjoying hearty comfort food and great atmosphere on Curtain Road.",
-      "landmarkId": "steakrestaurant.webp"
     },
     {
       "id": "2026-10-24-1600-86",
@@ -795,22 +785,11 @@
       "id": "2026-10-24-1730-87",
       "date": "2026-10-24",
       "dayTitle": "Double Date and a Gay Evening",
-      "time": "5:30 PM",
-      "startTime": "17:30",
+      "time": "6:00 PM",
+      "startTime": "18:00",
       "title": "Sky Garden Drinks",
       "activity": "Sipping drinks high above the city with panoramic skyline views.",
       "landmarkId": "bigben.webp"
-    },
-    {
-      "id": "2026-10-24-1830-88",
-      "date": "2026-10-24",
-      "dayTitle": "Double Date and a Gay Evening",
-      "time": "6:30 PM",
-      "startTime": "18:30",
-      "title": "Tower Bridge Walk",
-      "activity": "Crossing the iconic landmark as evening sets in over the Thames.",
-      "landmarkId": "bigben.webp",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tower+Bridge%2C+London+SE1+2UP"
     },
     {
       "id": "2026-10-24-1900-89",
@@ -818,10 +797,21 @@
       "dayTitle": "Double Date and a Gay Evening",
       "time": "7:00 PM",
       "startTime": "19:00",
-      "title": "Dinner Back Home",
-      "activity": "Returning to the apartment for a warm, cozy group dinner.",
-      "landmarkId": "movieatapartment.webp"
+      "title": "Dinner Outside?",
+      "activity": "Dinner at a great affordable restaurant.",
+      "landmarkId": "frenchrestaurant.webp"
     },
+    {
+      "id": "2026-10-24-1900-89",
+      "date": "2026-10-24",
+      "dayTitle": "Double Date and a Gay Evening",
+      "time": "9:00 PM",
+      "startTime": "21:00",
+      "title": "Gay Club / Head home",
+      "activity": "Either party at a gay club or head home to rest after a long day.",
+      "landmarkId": "clubbing.webp"
+    },
+
     {
       "id": "2026-10-25-0800-70",
       "date": "2026-10-25",
